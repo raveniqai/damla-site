@@ -1,0 +1,14 @@
+{
+  "_note": "Every owner-specific value lives here. Edit, then run: python3 build.py",
+  "app_name": "Damla",
+  "short_name": "Damla",
+  "brand": "RavenIQ",
+  "site_url": "https://damla.raveniq.ai",
+  "publisher": "RavenIQ",
+  "support_email": "support@raveniq.ai",
+  "support_email_confirmed": true,
+  "support_email_note": "Same address as the Forma site (Cloudflare Email Routing).",
+  "effective_date": "2026-10-29",
+  "app_store_url": null,
+  "app_store_note": "Leave null until the real App Store link exists. While null, the site says 'Coming to the App Store' and shows no badge or link."
+}
