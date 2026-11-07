@@ -19,8 +19,11 @@ Exchange rates, prices and bank logos come from third-party services and may be 
 ## 5. Acceptable use
 Do not misuse, reverse engineer (except where the law allows) or resell the app.
 
-## 6. Paid features
-Some features may be offered as an auto-renewing subscription. The price, the period and what is included are shown in the app, from the App Store for your country, before you subscribe. Payment is charged to your Apple Account when you confirm the purchase. A subscription renews automatically unless you cancel at least 24 hours before the end of the current period. You manage or cancel it in the Settings app on your iPhone (your name, then Subscriptions). Payments and refunds are handled by Apple, and we do not see your payment details.
+## 6. Subscriptions
+- **Plans.** Damla Core is an auto-renewing subscription, monthly or yearly. The price, the period and what is included are shown in the app, taken from the App Store for your country, before you subscribe.
+- **Free trial.** Damla is free for 14 days. The trial starts when you finish the first-run questions and asks for no payment details. It is kept on your phone and does not restart if you reinstall the app.
+- **Payment and renewal.** Payment is charged to your Apple Account when you confirm the purchase. A subscription renews automatically unless you cancel at least 24 hours before the end of the current period. You manage or cancel it in the Settings app on your iPhone (your name, then Subscriptions), or from Settings, Subscription inside Damla. Payments and refunds are handled by Apple, and we do not see your payment details.
+- **If the trial or a subscription ends.** You never lose access to your data. Damla becomes read-only: you can still look at everything, use the forecast, export your transactions and make and restore backups. Adding or changing entries needs an active trial or subscription, and nothing is deleted.
 
 ## 7. Warranty and liability
 The app is provided "as is" without warranties. To the extent the law allows, we are not liable for indirect or consequential loss, and our total liability is limited to what you paid for the app in the last 12 months. Nothing limits liability that cannot be limited by law.
