@@ -19,12 +19,12 @@ You tell Damla what happens with your money - a sentence, a form, a bank alert o
 - When a bank message arrives, so the transaction is recorded without typing it in.
 - When you want to know where the money went, what you own, or whether you can afford something you have in mind.
 
-## Step by step: a look around the app
+## The five tabs
 
-The app has five tabs at the bottom. Here is what each one is for.
+The app has five tabs at the bottom.
 
 1. Open Damla. It asks for Face ID when you open it, and again only after it has been away for the length of time you choose in Settings under Basics, Ask for Face ID (every time, or after 1, 5 or 15 minutes). The Shortcut automations that pass bank messages to Damla do not need it.
-2. Stay on **Today**. The big teal card shows Safe to spend, whether your balance stays above your minimum, and a small chart of your balance ahead (tap it for the full Forecast and What if). Below it you find what is coming, and anything waiting for you.
+2. **Today** is where you land. The big teal card shows Safe to spend, whether your balance stays above your minimum, and a small chart of your balance ahead (tap it for the full Forecast and What if). Below it you find what is coming, and anything waiting for you.
 3. Tap **Activity** to see every transaction. Tap one to change it.
 4. Tap **Accounts** to see your banks, savings, cards, loans, investments, assets and people.
 5. Tap **Insights** to see where the money went, your budget, net worth and holdings.
@@ -33,13 +33,13 @@ The app has five tabs at the bottom. Here is what each one is for.
 
 ## Good to know
 
-> **Note:** Damla is made so that your books stay right even when you are quick about it. Anything that creates a commitment (an instalment plan, a loan) or that Damla is unsure about is shown for one tap before it is written.
+> **Note:** Anything that creates a commitment (an instalment plan, a loan), or that Damla is unsure about, is shown for one tap before it is written.
 
 > **Tip:** When you have no accounts yet, Today shows a Let's set up Damla screen with a Set up step by step button. The set-up guide can be reopened later from Today or from Settings.
 
 > **Note:** The app gives you information and estimates about your own spending. It does not give financial advice; what to spend is your decision.
 
-If you wonder what reaches the internet at all: no account, balance, transaction or note ever leaves the phone, and the app works fully offline. The only lookups are the few optional ones, and they send no personal data - see [Privacy and your data](/guide/data/privacy-and-your-data/).
+No account, balance, transaction or note ever leaves the phone, and the app works fully offline. The only lookups are the few optional ones, and they send no personal data - see [Privacy and your data](/guide/data/privacy-and-your-data/).
 
 ## Related
 
