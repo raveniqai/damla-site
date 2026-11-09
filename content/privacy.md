@@ -29,7 +29,7 @@ Damla works fully offline. These small lookups are the only times it contacts th
 As with any web request, these services can see your IP address and the time of the request. They are third parties with their own privacy policies.
 
 ## Purchases
-If you subscribe, the purchase is made through the App Store and handled by Apple. We do not receive your name, payment card or Apple Account details. Damla checks your subscription status with Apple on your phone, using Apple's StoreKit, so it knows whether Core is active. The 14-day free trial is recorded on your phone only (in the Keychain and the app's own storage), not on any server of ours.
+If you subscribe, the purchase is made through the App Store and handled by Apple. We do not receive your name, payment card or Apple Account details. Damla checks your subscription status with Apple on your phone, using Apple's StoreKit, so it knows whether your subscription is active. The 45-day free trial is recorded on your phone only (in the Keychain and the app's own storage), not on any server of ours.
 
 ## Face ID
 Damla uses Face ID or your passcode only to unlock itself. Your biometric data stays in iOS and is never available to the app or to us.
