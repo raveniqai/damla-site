@@ -1,0 +1,47 @@
+[
+ {
+  "id": "start",
+  "title": "Start here",
+  "blurb": "What Damla is for, setting up, and how a day with it looks."
+ },
+ {
+  "id": "recording",
+  "title": "Recording money",
+  "blurb": "Sentences, forms, messages and the inbox."
+ },
+ {
+  "id": "accounts",
+  "title": "Accounts, cards and people",
+  "blurb": "Banks, savings, cards, loans and who owes whom."
+ },
+ {
+  "id": "holdings",
+  "title": "Holdings",
+  "blurb": "Investments, property, cars and staged purchases."
+ },
+ {
+  "id": "planning",
+  "title": "Planning",
+  "blurb": "The forecast, what-ifs, repeating money and commitments."
+ },
+ {
+  "id": "insights",
+  "title": "Insights",
+  "blurb": "Where the money went, budgets, trends and net worth."
+ },
+ {
+  "id": "capture",
+  "title": "Automatic capture",
+  "blurb": "Bank texts, emails, Wallet payments and statements."
+ },
+ {
+  "id": "data",
+  "title": "Settings, backup and privacy",
+  "blurb": "Where things are, keeping your data safe, and what stays on your phone."
+ },
+ {
+  "id": "help",
+  "title": "Help",
+  "blurb": "When something looks wrong."
+ }
+]
