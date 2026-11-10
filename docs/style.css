@@ -116,5 +116,5 @@ figcaption { color: var(--muted); font-size: .9rem; margin-top: .4rem; }
 .guide-list { list-style: none; padding: 0; }
 .guide-list li { padding: .35rem 0; }
 
-.lang-switch { margin: .6rem 0 0; font-size: .9rem; }
-.lang-switch [aria-current] { font-weight: 600; }
+.lang-switch { margin: 0; font-size: .9rem; align-items: center; gap: 0 .1rem; }
+.lang-switch [aria-current] { display: inline-flex; align-items: center; min-height: 44px; padding: 0 .6rem; font-weight: 700; }

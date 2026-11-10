@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://damla.raveniq.ai/</loc><lastmod>2026-10-29</lastmod></url>
-<url><loc>https://damla.raveniq.ai/support/</loc><lastmod>2026-10-29</lastmod></url>
 <url><loc>https://damla.raveniq.ai/privacy/</loc><lastmod>2026-10-29</lastmod></url>
 <url><loc>https://damla.raveniq.ai/terms/</loc><lastmod>2026-10-29</lastmod></url>
-<url><loc>https://damla.raveniq.ai/tr/privacy/</loc><lastmod>2026-10-29</lastmod></url>
-<url><loc>https://damla.raveniq.ai/fr/privacy/</loc><lastmod>2026-10-29</lastmod></url>
-<url><loc>https://damla.raveniq.ai/ar/privacy/</loc><lastmod>2026-10-29</lastmod></url>
-<url><loc>https://damla.raveniq.ai/tr/terms/</loc><lastmod>2026-10-29</lastmod></url>
-<url><loc>https://damla.raveniq.ai/fr/terms/</loc><lastmod>2026-10-29</lastmod></url>
-<url><loc>https://damla.raveniq.ai/ar/terms/</loc><lastmod>2026-10-29</lastmod></url>
-<url><loc>https://damla.raveniq.ai/guide/</loc><lastmod>2026-10-29</lastmod></url>
+<url><loc>https://damla.raveniq.ai/support/</loc><lastmod>2026-10-29</lastmod></url>
 <url><loc>https://damla.raveniq.ai/guide/start/what-damla-is-for/</loc><lastmod>2026-10-29</lastmod></url>
 <url><loc>https://damla.raveniq.ai/guide/start/first-setup/</loc><lastmod>2026-10-29</lastmod></url>
 <url><loc>https://damla.raveniq.ai/guide/start/a-day-with-damla/</loc><lastmod>2026-10-29</lastmod></url>
@@ -54,4 +47,11 @@
 <url><loc>https://damla.raveniq.ai/guide/data/export-and-family-snapshot/</loc><lastmod>2026-10-29</lastmod></url>
 <url><loc>https://damla.raveniq.ai/guide/data/privacy-and-your-data/</loc><lastmod>2026-10-29</lastmod></url>
 <url><loc>https://damla.raveniq.ai/guide/help/troubleshooting/</loc><lastmod>2026-10-29</lastmod></url>
+<url><loc>https://damla.raveniq.ai/guide/</loc><lastmod>2026-10-29</lastmod></url>
+<url><loc>https://damla.raveniq.ai/tr/privacy/</loc><lastmod>2026-10-29</lastmod></url>
+<url><loc>https://damla.raveniq.ai/tr/terms/</loc><lastmod>2026-10-29</lastmod></url>
+<url><loc>https://damla.raveniq.ai/fr/privacy/</loc><lastmod>2026-10-29</lastmod></url>
+<url><loc>https://damla.raveniq.ai/fr/terms/</loc><lastmod>2026-10-29</lastmod></url>
+<url><loc>https://damla.raveniq.ai/ar/privacy/</loc><lastmod>2026-10-29</lastmod></url>
+<url><loc>https://damla.raveniq.ai/ar/terms/</loc><lastmod>2026-10-29</lastmod></url>
 </urlset>

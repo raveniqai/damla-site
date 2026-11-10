@@ -22,7 +22,7 @@
       });
       return { p: p, score: score };
     }).filter(function (h) { return h.score > 0; }).sort(function (a, b) { return b.score - a.score; }).slice(0, 12);
-    if (!hits.length) { var li = document.createElement('li'); li.textContent = 'Nothing found. Try another word.'; out.appendChild(li); return; }
+    if (!hits.length) { var li = document.createElement('li'); li.textContent = box.dataset.none || 'Nothing found. Try another word.'; out.appendChild(li); return; }
     hits.forEach(function (h) {
       var li = document.createElement('li'), a = document.createElement('a'), sm = document.createElement('span');
       a.href = box.dataset.root + h.p.url; a.textContent = h.p.title; sm.textContent = ' ' + h.p.summary; sm.className = 'small';

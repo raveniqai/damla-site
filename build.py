@@ -39,13 +39,71 @@ LANGS = {
 }
 LEGAL_PAGES = ("privacy", "terms")
 
+# Interface words around the translated pages. English is the source; each language is a plain translation of these few labels.
+CHROME = {
+    "en": {"guide": "Guide", "support": "Support", "browse": "Browse the guide", "all": "All topics", "onpage": "On this page",
+           "unclear": "Something unclear or missing? Write to {email} and say which page.", "search": "Search the guide",
+           "ph": "for example: forecast, card, backup", "none": "Nothing found. Try another word.", "prevnext": "Previous and next",
+           "gtitle": "{app} guide", "gsuffix": "{app} guide", "glead": "What every part of {app} does and how to use it, in plain words, with worked examples. Every example uses invented people and numbers.",
+           "gdesc": "A detailed guide to {app}: what each feature does, how to use it, and worked examples.", "gpagetitle": "{app} guide: how to use every feature",
+           "store_soon": "Coming to the App Store", "store_btn": "View on the App Store",
+           "home_title": "{app}: cash-flow app for iPhone", "home_desc": "{app} is a cash-flow app for your household that runs on your iPhone, keeps your data on the phone, and shows what is safe to spend.",
+           "support_title": "Support - {app}", "support_desc": "How to contact support for {app}, and answers to common questions.",
+           "callouts": {"tip": "Tip", "note": "Note", "careful": "Careful", "example": "Example", "limit": "Limit"}},
+    "tr": {"guide": "K\u0131lavuz", "support": "Destek", "browse": "K\u0131lavuzda gezin", "all": "T\u00fcm konular", "onpage": "Bu sayfada",
+           "unclear": "Anla\u015f\u0131lmayan ya da eksik bir \u015fey mi var? {email} adresine yaz\u0131n ve hangi sayfa oldu\u011funu belirtin.", "search": "K\u0131lavuzda ara",
+           "ph": "\u00f6rne\u011fin: tahmin, kart, yedek", "none": "Sonu\u00e7 bulunamad\u0131. Ba\u015fka bir s\u00f6zc\u00fck deneyin.", "prevnext": "\u00d6nceki ve sonraki",
+           "gtitle": "{app} k\u0131lavuzu", "gsuffix": "{app} k\u0131lavuzu", "glead": "{app} uygulamas\u0131n\u0131n her b\u00f6l\u00fcm\u00fcn\u00fcn ne yapt\u0131\u011f\u0131 ve nas\u0131l kullan\u0131laca\u011f\u0131, sade s\u00f6zlerle ve \u00e7al\u0131\u015f\u0131lm\u0131\u015f \u00f6rneklerle. Her \u00f6rnekte uydurma ki\u015filer ve rakamlar kullan\u0131l\u0131r.",
+           "gdesc": "{app} i\u00e7in ayr\u0131nt\u0131l\u0131 k\u0131lavuz: her \u00f6zelli\u011fin ne yapt\u0131\u011f\u0131, nas\u0131l kullan\u0131laca\u011f\u0131 ve \u00e7al\u0131\u015f\u0131lm\u0131\u015f \u00f6rnekler.", "gpagetitle": "{app} k\u0131lavuzu: her \u00f6zellik nas\u0131l kullan\u0131l\u0131r",
+           "store_soon": "App Store\u2019a geliyor", "store_btn": "App Store\u2019da g\u00f6r\u00fcnt\u00fcle",
+           "home_title": "{app}: iPhone i\u00e7in nakit ak\u0131\u015f\u0131 uygulamas\u0131", "home_desc": "{app}, haneniz i\u00e7in iPhone\u2019unuzda \u00e7al\u0131\u015fan, verilerinizi telefonda tutan ve harcaman\u0131n g\u00fcvenli oldu\u011fu tutar\u0131 g\u00f6steren bir nakit ak\u0131\u015f\u0131 uygulamas\u0131d\u0131r.",
+           "support_title": "Destek - {app}", "support_desc": "{app} i\u00e7in destekle nas\u0131l ileti\u015fime ge\u00e7ilece\u011fi ve s\u0131k sorulan sorular\u0131n yan\u0131tlar\u0131.",
+           "callouts": {"tip": "\u0130pucu", "note": "Not", "careful": "Dikkat", "example": "\u00d6rnek", "limit": "S\u0131n\u0131r"}},
+    "fr": {"guide": "Guide", "support": "Assistance", "browse": "Parcourir le guide", "all": "Tous les sujets", "onpage": "Sur cette page",
+           "unclear": "Quelque chose n\u2019est pas clair ou manque ? \u00c9crivez \u00e0 {email} en indiquant la page.", "search": "Rechercher dans le guide",
+           "ph": "par exemple : pr\u00e9vision, carte, sauvegarde", "none": "Aucun r\u00e9sultat. Essayez un autre mot.", "prevnext": "Pr\u00e9c\u00e9dent et suivant",
+           "gtitle": "Guide de {app}", "gsuffix": "guide de {app}", "glead": "Ce que fait chaque partie de {app} et comment l\u2019utiliser, en mots simples, avec des exemples chiffr\u00e9s. Tous les exemples utilisent des personnes et des chiffres invent\u00e9s.",
+           "gdesc": "Un guide d\u00e9taill\u00e9 de {app} : ce que fait chaque fonction, comment l\u2019utiliser, avec des exemples chiffr\u00e9s.", "gpagetitle": "Guide de {app} : utiliser chaque fonction",
+           "store_soon": "Bient\u00f4t sur l\u2019App Store", "store_btn": "Voir sur l\u2019App Store",
+           "home_title": "{app} : application de tr\u00e9sorerie pour iPhone", "home_desc": "{app} est une application de tr\u00e9sorerie pour votre foyer, qui fonctionne sur votre iPhone, garde vos donn\u00e9es sur le t\u00e9l\u00e9phone et montre ce que vous pouvez d\u00e9penser en toute s\u00e9curit\u00e9.",
+           "support_title": "Assistance - {app}", "support_desc": "Comment contacter l\u2019assistance de {app}, et les r\u00e9ponses aux questions courantes.",
+           "callouts": {"tip": "Astuce", "note": "Remarque", "careful": "Attention", "example": "Exemple", "limit": "Limite"}},
+    "ar": {"guide": "\u0627\u0644\u062f\u0644\u064a\u0644", "support": "\u0627\u0644\u062f\u0639\u0645", "browse": "\u062a\u0635\u0641\u0651\u062d \u0627\u0644\u062f\u0644\u064a\u0644", "all": "\u0643\u0644 \u0627\u0644\u0645\u0648\u0627\u0636\u064a\u0639", "onpage": "\u0641\u064a \u0647\u0630\u0647 \u0627\u0644\u0635\u0641\u062d\u0629",
+           "unclear": "\u0647\u0644 \u0647\u0646\u0627\u0643 \u0634\u064a\u0621 \u063a\u064a\u0631 \u0648\u0627\u0636\u062d \u0623\u0648 \u0646\u0627\u0642\u0635\u061f \u0627\u0643\u062a\u0628 \u0625\u0644\u0649 {email} \u0648\u0627\u0630\u0643\u0631 \u0627\u0644\u0635\u0641\u062d\u0629.", "search": "\u0627\u0628\u062d\u062b \u0641\u064a \u0627\u0644\u062f\u0644\u064a\u0644",
+           "ph": "\u0645\u062b\u0644\u0627\u064b: \u0627\u0644\u062a\u0648\u0642\u0639\u060c \u0628\u0637\u0627\u0642\u0629\u060c \u0646\u0633\u062e\u0629 \u0627\u062d\u062a\u064a\u0627\u0637\u064a\u0629", "none": "\u0644\u0645 \u064a\u064f\u0639\u062b\u0631 \u0639\u0644\u0649 \u0646\u062a\u0627\u0626\u062c. \u062c\u0631\u0651\u0628 \u0643\u0644\u0645\u0629 \u0623\u062e\u0631\u0649.", "prevnext": "\u0627\u0644\u0633\u0627\u0628\u0642 \u0648\u0627\u0644\u062a\u0627\u0644\u064a",
+           "gtitle": "\u062f\u0644\u064a\u0644 {app}", "gsuffix": "\u062f\u0644\u064a\u0644 {app}", "glead": "\u0645\u0627 \u062a\u0641\u0639\u0644\u0647 \u0643\u0644 \u0645\u064a\u0632\u0629 \u0645\u0646 {app} \u0648\u0643\u064a\u0641 \u062a\u0633\u062a\u062e\u062f\u0645\u0647\u0627\u060c \u0628\u0643\u0644\u0645\u0627\u062a \u0628\u0633\u064a\u0637\u0629 \u0648\u0623\u0645\u062b\u0644\u0629 \u0645\u062d\u0633\u0648\u0628\u0629. \u0643\u0644 \u0627\u0644\u0623\u0645\u062b\u0644\u0629 \u062a\u0633\u062a\u062e\u062f\u0645 \u0623\u0634\u062e\u0627\u0635\u0627\u064b \u0648\u0623\u0631\u0642\u0627\u0645\u0627\u064b \u0645\u062e\u062a\u0631\u0639\u0629.",
+           "gdesc": "\u062f\u0644\u064a\u0644 \u0645\u0641\u0635\u0651\u0644 \u0644\u0640 {app}: \u0645\u0627 \u062a\u0641\u0639\u0644\u0647 \u0643\u0644 \u0645\u064a\u0632\u0629 \u0648\u0643\u064a\u0641 \u062a\u0633\u062a\u062e\u062f\u0645\u0647\u0627 \u0645\u0639 \u0623\u0645\u062b\u0644\u0629 \u0645\u062d\u0633\u0648\u0628\u0629.", "gpagetitle": "\u062f\u0644\u064a\u0644 {app}: \u0643\u064a\u0641 \u062a\u0633\u062a\u062e\u062f\u0645 \u0643\u0644 \u0645\u064a\u0632\u0629",
+           "store_soon": "\u0642\u0631\u064a\u0628\u064b\u0627 \u0639\u0644\u0649 App Store", "store_btn": "\u0639\u0631\u0636 \u0641\u064a App Store",
+           "home_title": "{app}: \u062a\u0637\u0628\u064a\u0642 \u0627\u0644\u062a\u062f\u0641\u0642 \u0627\u0644\u0646\u0642\u062f\u064a \u0644\u0644\u0622\u064a\u0641\u0648\u0646", "home_desc": "{app} \u062a\u0637\u0628\u064a\u0642 \u0644\u0644\u062a\u062f\u0641\u0642 \u0627\u0644\u0646\u0642\u062f\u064a \u0644\u0623\u0633\u0631\u062a\u0643 \u064a\u0639\u0645\u0644 \u0639\u0644\u0649 \u0647\u0627\u062a\u0641\u0643\u060c \u0648\u064a\u064f\u0628\u0642\u064a \u0628\u064a\u0627\u0646\u0627\u062a\u0643 \u0639\u0644\u0649 \u0627\u0644\u062c\u0647\u0627\u0632\u060c \u0648\u064a\u064f\u0638\u0647\u0631 \u0627\u0644\u0645\u0628\u0644\u063a \u0627\u0644\u0622\u0645\u0646 \u0644\u0644\u0625\u0646\u0641\u0627\u0642.",
+           "support_title": "\u0627\u0644\u062f\u0639\u0645 - {app}", "support_desc": "\u0643\u064a\u0641 \u062a\u062a\u0648\u0627\u0635\u0644 \u0645\u0639 \u062f\u0639\u0645 {app}\u060c \u0648\u0625\u062c\u0627\u0628\u0627\u062a \u0639\u0646 \u0627\u0644\u0623\u0633\u0626\u0644\u0629 \u0627\u0644\u0634\u0627\u0626\u0639\u0629.",
+           "callouts": {"tip": "\u0646\u0635\u064a\u062d\u0629", "note": "\u0645\u0644\u0627\u062d\u0638\u0629", "careful": "\u062a\u0646\u0628\u064a\u0647", "example": "\u0645\u062b\u0627\u0644", "limit": "\u062d\u062f"}},
+}
+SITEMAP: list[str] = []
+CUR_LANG = "en"
 
-def translated(lang: str, page: str) -> bool:
-    return lang == "en" or (ROOT / "content" / "i18n" / lang / f"{page}.md").exists()
+
+def url_for(lang: str, rel: str) -> str:
+    return rel if lang == "en" else f"{lang}/{rel}"
 
 
-def page_url(lang: str, page: str) -> str:
-    return f"{page}/" if lang == "en" else f"{lang}/{page}/"
+def i18n_src(lang: str, *parts: str) -> Path:
+    return ROOT / "content" / "i18n" / lang / Path(*parts)
+
+
+def exists(lang: str, rel: str) -> bool:
+    """Is there a page at this English-relative URL in this language? English always; others only when a translated source exists."""
+    if lang == "en":
+        return True
+    if rel == "":
+        return i18n_src(lang, "home.html").exists()
+    if rel == "support/":
+        return i18n_src(lang, "support.html").exists()
+    if rel in ("privacy/", "terms/"):
+        return i18n_src(lang, rel.strip("/") + ".md").exists()
+    if rel == "guide/":
+        return i18n_src(lang, "guide", "sections.json").exists()
+    m = re.match(r"guide/([^/]+)/([^/]+)/$", rel)
+    return bool(m) and i18n_src(lang, "guide", m.group(1), m.group(2) + ".md").exists()
 
 
 TOKEN = re.compile(r"\{\{\s*([a-z_]+)\s*\}\}")
@@ -75,6 +133,8 @@ def inline(s: str, root: str) -> str:
     def link(m):
         text, url = m.group(1), m.group(2)
         if url.startswith("/"):
+            if CUR_LANG != "en" and url.startswith("/guide/") and exists(CUR_LANG, url.lstrip("/")):
+                url = "/" + CUR_LANG + url   # a page not translated yet links to the English one instead of a dead end
             url = root + url.lstrip("/")
         return f'<a href="{url}">{text}</a>'
 
@@ -85,8 +145,10 @@ def slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
-def markdown(src: str, root: str, img_root: str = "") -> tuple[str, str]:
+def markdown(src: str, root: str, img_root: str = "", lang: str = "en") -> tuple[str, str]:
     """Return (title from the first # heading, body html)."""
+    global CUR_LANG
+    CUR_LANG = lang
     title, out = "", []
     para, items, ordered, quote, table, code = [], [], [], [], [], None
 
@@ -107,6 +169,8 @@ def markdown(src: str, root: str, img_root: str = "") -> tuple[str, str]:
             m = re.match(r"\*\*(Tip|Note|Careful|Example|Limit)[:.]?\*\*", text)
             if m:
                 kind = m.group(1).lower()
+                if lang != "en":  # the translated page keeps the English marker word; the label shown is the translated one
+                    text = f"**{CHROME[lang]['callouts'][kind]}{text[m.end() - 3] if text[m.end() - 3] in ':.' else ''}**" + text[m.end():]
             out.append(f'<aside class="callout {kind}"><p>{inline(text, root)}</p></aside>')
             quote = []
         if table:
@@ -174,32 +238,45 @@ def markdown(src: str, root: str, img_root: str = "") -> tuple[str, str]:
 
 
 # ---------- pages ----------
-def render(page_path: str, title: str, description: str, body: str, root: str, current: str = "", wide: bool = False,
-           lang: str = "en", legal_page: str = "") -> None:
+def render(rel: str, title: str, description: str, body: str, current: str = "", wide: bool = False, lang: str = "en",
+           path: str | None = None, root: str | None = None) -> None:
+    """Write one page. `rel` is the English-relative URL of the page (for example "privacy/" or "guide/start/x/"); for another language the page
+    lives under /<lang>/. The language switcher lists the languages that have this page, and the equivalent hreflang links go in the head."""
     base = (ROOT / "templates" / "base.html").read_text(encoding="utf-8")
-    L = LANGS[lang]
+    L, C = LANGS[lang], CHROME[lang]
+    page_path = path or (url_for(lang, rel) + "index.html")
+    if root is None:
+        depth = page_path.count("/")
+        root = "../" * depth if depth else "./"
     nav = []
-    if lang == "en":
-        items = (("guide", "Guide", "guide/"), ("support", "Support", "support/"), ("privacy", L["privacy"], "privacy/"), ("terms", L["terms"], "terms/"))
-    else:  # translated pages offer only what is translated
-        items = tuple((k, L[k], page_url(lang, k)) for k in LEGAL_PAGES if translated(lang, k))
-    for key, label, href in items:
+    for key, label, r in (("guide", C["guide"], "guide/"), ("support", C["support"], "support/"), ("privacy", L["privacy"], "privacy/"), ("terms", L["terms"], "terms/")):
+        if not exists(lang, r):
+            continue
         cur = ' aria-current="page"' if key == current else ""
-        nav.append(f'<a href="{root}{href}"{cur}>{label}</a>')
-    # language switcher and hreflang: only for the legal pages, and only to languages that have this page
+        nav.append(f'<a href="{root}{url_for(lang, r)}"{cur}>{label}</a>')
+    footer_links = " &middot; ".join(f'<a href="{root}{url_for(lang, r)}">{label}</a>' for label, r in
+                                    ((C["guide"], "guide/"), (C["support"], "support/"), (L["privacy"], "privacy/"), (L["terms"], "terms/")) if exists(lang, r))
+    site = CFG["site_url"].rstrip("/")
     alternates, switcher = "", ""
-    if legal_page:
-        have = [code for code in LANGS if translated(code, legal_page)]
+    if rel is not None and path is None:
+        have = [c for c in LANGS if exists(c, rel)]
         if len(have) > 1:
-            site = CFG["site_url"].rstrip("/")
-            alternates = "\n".join(f'<link rel="alternate" hreflang="{c}" href="{site}/{page_url(c, legal_page)}">' for c in have)
-            alternates += f'\n<link rel="alternate" hreflang="x-default" href="{site}/{page_url("en", legal_page)}">'
-            links = " &middot; ".join(
-                (f'<span aria-current="true">{LANGS[c]["name"]}</span>' if c == lang else f'<a href="{root}{page_url(c, legal_page)}" lang="{c}" hreflang="{c}">{LANGS[c]["name"]}</a>')
-                for c in have)
-            switcher = f'<p class="lang-switch" aria-label="{L["switch"]}">{links}</p>'
-    footer_links = (f'<a href="{root}guide/">Guide</a> &middot; <a href="{root}privacy/">Privacy</a> &middot; <a href="{root}terms/">Terms</a> &middot; <a href="{root}support/">Support</a>'
-                    if lang == "en" else " &middot; ".join(f'<a href="{root}{page_url(lang, k)}">{L[k]}</a>' for k in LEGAL_PAGES if translated(lang, k)))
+            alternates = "\n".join(f'<link rel="alternate" hreflang="{c}" href="{site}/{url_for(c, rel)}">' for c in have)
+            alternates += f'\n<link rel="alternate" hreflang="x-default" href="{site}/{url_for("en", rel)}">'
+        # every language is offered: the same page when it exists there, otherwise that language's home page
+        links = []
+        for c in LANGS:
+            target = rel if exists(c, rel) else ("" if exists(c, "") else None)
+            if target is None:
+                continue
+            if c == lang:
+                links.append(f'<span aria-current="true">{LANGS[c]["name"]}</span>')
+            else:
+                links.append(f'<a href="{root}{url_for(c, target)}" lang="{c}" hreflang="{c}">{LANGS[c]["name"]}</a>')
+        if len(links) > 1:
+            switcher = f'<nav class="lang-switch" aria-label="{L["switch"]}">' + " &middot; ".join(links) + "</nav>"
+    home = f'{root}{url_for(lang, "")}' if exists(lang, "") else root
+    canon_rel = "" if page_path == "index.html" else page_path.replace("index.html", "")
     page = fill(
         base,
         {
@@ -207,8 +284,9 @@ def render(page_path: str, title: str, description: str, body: str, root: str, c
             "description": html.escape(description, quote=True),
             "content": body,
             "root": root,
+            "home": home,
             "nav": "\n".join(nav),
-            "canonical": CFG["site_url"].rstrip("/") + "/" + ("" if page_path == "index.html" else page_path.replace("index.html", "")),
+            "canonical": site + "/" + canon_rel,
             "year_note": "",
             "main_class": "wrap wide" if wide else "wrap",
             "lang": lang,
@@ -226,15 +304,19 @@ def render(page_path: str, title: str, description: str, body: str, root: str, c
     # Internal owner notes live in the SOURCE (templates/content) and README, never in the published HTML.
     page = re.sub(r"[ \t]*<!--(?:(?!-->).)*?TODO-OWNER(?:(?!-->).)*?-->[ \t]*\n?", "", page, flags=re.S)
     dest.write_text(page, encoding="utf-8")
+    if path is None:
+        SITEMAP.append(canon_rel)
 
 
-def fragment(name: str, root: str) -> str:
+def fragment(name: str, root: str, lang: str = "en") -> str:
     extra = {"root": root}
+    C = CHROME[lang]
     if CFG.get("app_store_url"):
-        extra["store"] = f'<a class="button" href="{html.escape(CFG["app_store_url"])}">View on the App Store</a>'
+        extra["store"] = f'<a class="button" href="{html.escape(CFG["app_store_url"])}">{C["store_btn"]}</a>'
     else:
-        extra["store"] = '<p class="soon"><strong>Coming to the App Store</strong></p>'
-    return fill((ROOT / "templates" / name).read_text(encoding="utf-8"), extra, where=name)
+        extra["store"] = f'<p class="soon"><strong>{C["store_soon"]}</strong></p>'
+    src = ROOT / "templates" / name if lang == "en" else i18n_src(lang, "home.html" if name == "index.html" else name)
+    return fill(src.read_text(encoding="utf-8"), extra, where=str(src))
 
 
 def legal(md_name: str, root: str, lang: str = "en") -> tuple[str, str]:
@@ -244,7 +326,7 @@ def legal(md_name: str, root: str, lang: str = "en") -> tuple[str, str]:
     left = re.findall(r"\[[^\]]+\](?!\()", visible)
     if left:
         sys.exit(f"build error: unreplaced [bracket] placeholder(s) in {md_name}: {left}")
-    title, body = markdown(raw, root)
+    title, body = markdown(raw, root, lang=lang)
     return title, body
 
 
@@ -274,7 +356,7 @@ SEARCH_JS = r"""(function () {
       });
       return { p: p, score: score };
     }).filter(function (h) { return h.score > 0; }).sort(function (a, b) { return b.score - a.score; }).slice(0, 12);
-    if (!hits.length) { var li = document.createElement('li'); li.textContent = 'Nothing found. Try another word.'; out.appendChild(li); return; }
+    if (!hits.length) { var li = document.createElement('li'); li.textContent = box.dataset.none || 'Nothing found. Try another word.'; out.appendChild(li); return; }
     hits.forEach(function (h) {
       var li = document.createElement('li'), a = document.createElement('a'), sm = document.createElement('span');
       a.href = box.dataset.root + h.p.url; a.textContent = h.p.title; sm.textContent = ' ' + h.p.summary; sm.className = 'small';
@@ -300,14 +382,18 @@ def front_matter(raw: str, where: str) -> tuple[dict, str]:
     return meta, m.group(2)
 
 
-def build_guide() -> list[str]:
-    """Render content/guide into docs/guide. Returns the URLs for the sitemap."""
-    if not GUIDE.exists():
-        return []
-    sections = json.loads((GUIDE / "sections.json").read_text(encoding="utf-8"))
+def build_guide(lang: str = "en") -> None:
+    """Render the guide for one language. English reads content/guide; another language reads content/i18n/<lang>/guide and builds only the pages that
+    exist there. Screenshots: content/guide/img/<lang>/<file> when it exists, otherwise the English screenshot."""
+    gdir = GUIDE if lang == "en" else i18n_src(lang, "guide")
+    if not (gdir / "sections.json").exists():
+        return
+    C = CHROME[lang]
+    app = CFG["app_name"]
+    sections = json.loads((gdir / "sections.json").read_text(encoding="utf-8"))
     pages = []
     for sec in sections:
-        d = GUIDE / sec["id"]
+        d = gdir / sec["id"]
         if not d.exists():
             continue
         items = []
@@ -320,70 +406,82 @@ def build_guide() -> list[str]:
             items.append((int(meta["order"]), f.stem, meta, body))
         items.sort(key=lambda x: (x[0], x[1]))
         for _, stem, meta, body in items:
-            pages.append({"section": sec, "slug": stem, "meta": meta, "body": body, "url": f"guide/{sec['id']}/{stem}/"})
+            pages.append({"section": sec, "slug": stem, "meta": meta, "body": body, "rel": f"guide/{sec['id']}/{stem}/"})
     if not pages:
-        return []
-    app = CFG["app_name"]
-    root_for = lambda depth: "../" * depth
+        return
+    img_rel = url_for(lang, "guide/img/")
 
-    def sidebar(current_url: str, root: str) -> str:
-        out = ['<details class="guide-menu" open><summary>Browse the guide</summary>', '<div class="guide-nav" role="navigation" aria-label="Guide">', f'<a class="guide-home" href="{root}guide/">All topics</a>']
+    def sidebar(current_rel: str, root: str) -> str:
+        out = [f'<details class="guide-menu" open><summary>{C["browse"]}</summary>', '<div class="guide-nav" role="navigation" aria-label="' + C["guide"] + '">',
+               f'<a class="guide-home" href="{root}{url_for(lang, "guide/")}">{C["all"]}</a>']
         for sec in sections:
             mine = [p for p in pages if p["section"]["id"] == sec["id"]]
             if not mine:
                 continue
-            open_ = " open" if any(p["url"] == current_url for p in mine) else ""
+            open_ = " open" if any(p["rel"] == current_rel for p in mine) else ""
             out.append(f'<details{open_}><summary>{html.escape(sec["title"])}</summary><ul>')
             for p in mine:
-                cur = ' aria-current="page"' if p["url"] == current_url else ""
-                out.append(f'<li><a href="{root}{p["url"]}"{cur}>{html.escape(p["meta"]["title"])}</a></li>')
+                cur = ' aria-current="page"' if p["rel"] == current_rel else ""
+                out.append(f'<li><a href="{root}{url_for(lang, p["rel"])}"{cur}>{html.escape(p["meta"]["title"])}</a></li>')
             out.append("</ul></details>")
         out.append("</div></details>")
         return "\n".join(out)
 
     index_rows = []
     for i, p in enumerate(pages):
-        root = root_for(4)
-        title, body_html = markdown(p["body"], root, img_root=root + "guide/img/")
+        root = "../" * url_for(lang, p["rel"]).count("/")
+        title, body_html = markdown(p["body"], root, img_root=root + img_rel, lang=lang)
         h2s = re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', body_html)
         toc = ""
         if len(h2s) > 2:
-            toc = '<div class="on-page" role="navigation" aria-label="On this page"><strong>On this page</strong><ul>' + "".join(f'<li><a href="#{a}">{b}</a></li>' for a, b in h2s) + "</ul></div>"
+            toc = f'<div class="on-page" role="navigation" aria-label="{C["onpage"]}"><strong>{C["onpage"]}</strong><ul>' + "".join(f'<li><a href="#{a}">{b}</a></li>' for a, b in h2s) + "</ul></div>"
         prev_ = pages[i - 1] if i > 0 else None
         next_ = pages[i + 1] if i + 1 < len(pages) else None
-        pager = '<div class="pager" role="navigation" aria-label="Previous and next">'
-        pager += f'<a rel="prev" href="{root}{prev_["url"]}">&larr; {html.escape(prev_["meta"]["title"])}</a>' if prev_ else "<span></span>"
-        pager += f'<a rel="next" href="{root}{next_["url"]}">{html.escape(next_["meta"]["title"])} &rarr;</a>' if next_ else "<span></span>"
+        back, fwd = ("&rarr;", "&larr;") if LANGS[lang]["dir"] == "rtl" else ("&larr;", "&rarr;")
+        pager = f'<div class="pager" role="navigation" aria-label="{C["prevnext"]}">'
+        pager += f'<a rel="prev" href="{root}{url_for(lang, prev_["rel"])}">{back} {html.escape(prev_["meta"]["title"])}</a>' if prev_ else "<span></span>"
+        pager += f'<a rel="next" href="{root}{url_for(lang, next_["rel"])}">{html.escape(next_["meta"]["title"])} {fwd}</a>' if next_ else "<span></span>"
         pager += "</div>"
-        article = (f'<article class="prose guide-page"><p class="crumb"><a href="{root}guide/">Guide</a> &rsaquo; {html.escape(p["section"]["title"])}</p>'
+        unclear = C["unclear"].format(email=f'<span class="email">{CFG["support_email"]}</span>')
+        article = (f'<article class="prose guide-page"><p class="crumb"><a href="{root}{url_for(lang, "guide/")}">{C["guide"]}</a> &rsaquo; {html.escape(p["section"]["title"])}</p>'
                    f'<h1>{html.escape(p["meta"]["title"])}</h1><p class="lead-in">{inline(p["meta"]["summary"], root)}</p>{toc}{body_html}'
-                   f'<p class="small">Something unclear or missing? Write to <span class="email">{CFG["support_email"]}</span> and say which page.</p>{pager}</article>')
-        page_html = f'<div class="guide-layout">{sidebar(p["url"], root)}{article}</div><script src="{root}guide/search.js" defer></script>'
-        render(p["url"] + "index.html", f"{p['meta']['title']} - {app} guide", p["meta"]["summary"], page_html, root, "guide", wide=True)
+                   f'<p class="small">{unclear}</p>{pager}</article>')
+        page_html = f'<div class="guide-layout">{sidebar(p["rel"], root)}{article}</div><script src="{root}guide/search.js" defer></script>'
+        render(p["rel"], f"{p['meta']['title']} - {C['gsuffix'].format(app=app)}", p["meta"]["summary"], page_html, "guide", wide=True, lang=lang)
         plain = re.sub(r"<[^>]+>", " ", body_html)
         plain = re.sub(r"\s+", " ", html.unescape(plain)).lower()
-        index_rows.append({"title": p["meta"]["title"], "summary": p["meta"]["summary"], "url": p["url"], "text": plain})
+        index_rows.append({"title": p["meta"]["title"], "summary": p["meta"]["summary"], "url": url_for(lang, p["rel"]), "text": plain})
 
     # the guide home
-    root = "../"
+    root = "../" * url_for(lang, "guide/").count("/")
     cards = []
     for sec in sections:
         mine = [p for p in pages if p["section"]["id"] == sec["id"]]
         if not mine:
             continue
-        lis = "".join(f'<li><a href="{root}{p["url"]}">{html.escape(p["meta"]["title"])}</a><span class="small"> {inline(p["meta"]["summary"], root)}</span></li>' for p in mine)
+        lis = "".join(f'<li><a href="{root}{url_for(lang, p["rel"])}">{html.escape(p["meta"]["title"])}</a><span class="small"> {inline(p["meta"]["summary"], root)}</span></li>' for p in mine)
         cards.append(f'<section class="card guide-card" id="{sec["id"]}"><h2>{html.escape(sec["title"])}</h2><p class="small">{html.escape(sec.get("blurb", ""))}</p><ul class="guide-list">{lis}</ul></section>')
-    home = (f'<article class="prose"><h1>{html.escape(app)} guide</h1><p class="lead-in">What every part of {html.escape(CFG["short_name"])} does and how to use it, in plain words, '
-            f'with worked examples. Every example uses invented people and numbers.</p>'
-            f'<label class="search"><span>Search the guide</span><input id="guide-search" type="search" placeholder="for example: forecast, card, backup" autocomplete="off" data-index="{root}guide/search.json" data-root="{root}"></label>'
+    home = (f'<article class="prose"><h1>{html.escape(C["gtitle"].format(app=app))}</h1><p class="lead-in">{html.escape(C["glead"].format(app=CFG["short_name"]))}</p>'
+            f'<label class="search"><span>{C["search"]}</span><input id="guide-search" type="search" placeholder="{html.escape(C["ph"], quote=True)}" autocomplete="off" data-none="{html.escape(C["none"], quote=True)}" data-index="{root}{url_for(lang, "guide/")}search.json" data-root="{root}"></label>'
             f'<ul id="guide-results" class="results" aria-live="polite"></ul>{"".join(cards)}</article><script src="{root}guide/search.js" defer></script>')
-    render("guide/index.html", f"{app} guide: how to use every feature", f"A detailed guide to {app}: what each feature does, how to use it, and worked examples.", home, root, "guide", wide=True)
-    (OUT / "guide").mkdir(exist_ok=True)
-    (OUT / "guide" / "search.json").write_text(json.dumps(index_rows, ensure_ascii=False), encoding="utf-8")
-    (OUT / "guide" / "search.js").write_text(SEARCH_JS, encoding="utf-8")
-    if (GUIDE / "img").exists():
-        shutil.copytree(GUIDE / "img", OUT / "guide" / "img")
-    return ["guide/"] + [p["url"] for p in pages]
+    render("guide/", C["gpagetitle"].format(app=app), C["gdesc"].format(app=app), home, "guide", wide=True, lang=lang)
+    out_guide = OUT / url_for(lang, "guide")
+    out_guide.mkdir(parents=True, exist_ok=True)
+    (out_guide / "search.json").write_text(json.dumps(index_rows, ensure_ascii=False), encoding="utf-8")
+    if lang == "en":
+        (out_guide / "search.js").write_text(SEARCH_JS, encoding="utf-8")
+    # screenshots: the language's own where they exist, the English ones otherwise
+    en_img, own_img = GUIDE / "img", GUIDE / "img" / lang
+    dst = OUT / img_rel
+    if en_img.exists():
+        dst.mkdir(parents=True, exist_ok=True)
+        for f in en_img.iterdir():
+            if f.is_file():
+                shutil.copy(f, dst / f.name)
+        if lang != "en" and own_img.exists():
+            for f in own_img.iterdir():
+                if f.is_file():
+                    shutil.copy(f, dst / f.name)
 
 
 def main() -> None:
@@ -392,28 +490,25 @@ def main() -> None:
     OUT.mkdir()
     app = CFG["app_name"]
 
-    render("index.html", f"{app}: cash-flow app for iPhone",
-           f"{app} is a cash-flow app for your household that runs on your iPhone, keeps your data on the phone, and shows what is safe to spend.",
-           fragment("index.html", "./"), "./")
-
-    for key, md in (("privacy", "privacy.md"), ("terms", "terms.md")):
-        for lang in LANGS:
-            if not translated(lang, key):
+    for lang in LANGS:
+        C, L = CHROME[lang], LANGS[lang]
+        if exists(lang, ""):
+            render("", C["home_title"].format(app=app), C["home_desc"].format(app=app), fragment("index.html", "../" if lang != "en" else "./", lang), "", lang=lang)
+        for key, md in (("privacy", "privacy.md"), ("terms", "terms.md")):
+            if not exists(lang, key + "/"):
                 continue
             root = "../" if lang == "en" else "../../"
             title, body = legal(md, root, lang)
             head = f'<h1>{html.escape(title)}</h1>'
             # the "Last updated" paragraph is the first <p>; give it a class for styling
             body = body.replace("<p>", '<p class="updated">', 1)
-            desc = LANGS[lang]["desc"][key].format(app=app)
-            render(page_url(lang, key) + "index.html", f"{title} - {app}", desc, f'<article class="prose">\n{head}\n{body}\n</article>', root, key,
-                   lang=lang, legal_page=key)
+            desc = L["desc"][key].format(app=app)
+            render(key + "/", f"{title} - {app}", desc, f'<article class="prose">\n{head}\n{body}\n</article>', key, lang=lang)
+        if exists(lang, "support/"):
+            render("support/", C["support_title"].format(app=app), C["support_desc"].format(app=app), fragment("support.html", "../" if lang == "en" else "../../", lang), "support", lang=lang)
+        build_guide(lang)
 
-    render("support/index.html", f"Support - {app}", f"How to contact support for {app}, and answers to common questions.",
-           fragment("support.html", "../"), "../", "support")
-
-    guide_urls = build_guide()
-    render("404.html", f"Page not found - {app}", "This page does not exist.", fragment("404.html", "/"), "/")
+    render("", f"Page not found - {app}", "This page does not exist.", fragment("404.html", "/"), path="404.html", root="/")
 
     # static files
     shutil.copy(ROOT / "static" / "style.css", OUT / "style.css")
@@ -424,10 +519,9 @@ def main() -> None:
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
     base = CFG["site_url"].rstrip("/")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n", encoding="utf-8")
-    urls = ["", "support/", "privacy/", "terms/"] + [page_url(l, k) for k in LEGAL_PAGES for l in LANGS if l != "en" and translated(l, k)] + guide_urls
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + "".join(f"<url><loc>{base}/{u}</loc><lastmod>{CFG['effective_date']}</lastmod></url>\n" for u in urls)
+        + "".join(f"<url><loc>{base}/{u}</loc><lastmod>{CFG['effective_date']}</lastmod></url>\n" for u in SITEMAP)
         + "</urlset>\n", encoding="utf-8")
 
     # loud warnings
