@@ -47,7 +47,7 @@ The setup wizard walks you through making the Shortcuts automations that feed Da
 - **The wording on your iPhone may differ slightly from the steps.**
 - **If Damla's actions are missing in Shortcuts**, the Automations screen lists the actions to look for — **Add to Damla**, **Add statement to Damla**, **Add card payment to Damla**, **How much can I spend** — and what to do: open Damla, force-quit Shortcuts and open it again; if an action is still missing, restart the iPhone.
 
-> **Limit:** **Experimental.** Automation depends on iOS and can miss a message. Check Recent alerts now and then. Nothing unclear is saved without your OK.
+> **Limit:** iOS runs your Shortcuts, not Damla, and can occasionally skip one. Check Recent alerts now and then.
 
 ## Related
 
