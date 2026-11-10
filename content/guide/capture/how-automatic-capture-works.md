@@ -44,8 +44,6 @@ Damla checks each message against the same list of rules, in this order, and sto
 - **Where the phone has Apple Intelligence**, the model may only read fields from the text. Every number and name it returns must appear in the text or it is ignored, and what it reads is never saved without you seeing it.
 - **Reading is by wording and is not perfect.** An offer worded like a payment can occasionally get through, and an unusual wording can wait in the Inbox instead of being added. Limit each Shortcut to your bank's sender or subject, so unrelated messages are never sent to Damla.
 
-> **Limit:** iOS runs your Shortcuts, not Damla, and can occasionally skip one. Check Recent alerts now and then.
-
 ## Related
 
 - [The automation setup wizard](/guide/capture/setup-wizard/)

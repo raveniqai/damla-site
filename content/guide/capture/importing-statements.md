@@ -43,8 +43,6 @@ A row that came in earlier as a bank alert counts as the same transaction when t
 - **Rows that say which payment of how many they are** (instalment markers on a card statement) are listed under Instalments found, and nothing is added until you confirm. They go under the Instalments category, not as spending. The payments still to come are added to your instalment plans on the card's later due dates.
 - Purchases in another currency are updated to the amount the bank really billed.
 
-> **Limit:** Reading statements with Apple Intelligence is new and can get a row wrong. Check the totals before you import. Nothing is saved without your OK.
-
 ## Related
 
 - [Screenshots of your bank app](/guide/capture/screenshots-of-your-bank-app/)
