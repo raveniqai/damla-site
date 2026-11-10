@@ -18,8 +18,8 @@ body { margin: 0; background: var(--bg); color: var(--text); font: 1rem/1.6 var(
 a { color: var(--accent); text-underline-offset: 0.15em; }
 a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
-.skip { position: absolute; left: -999px; top: 0; background: var(--surface); color: var(--text); padding: .75rem 1rem; z-index: 10; }
-.skip:focus { left: 0; }
+.skip { position: absolute; inset-inline-start: -999px; top: 0; background: var(--surface); color: var(--text); padding: .75rem 1rem; z-index: 10; }
+.skip:focus { inset-inline-start: 0; }
 
 .site-header { border-bottom: 1px solid var(--line); }
 .bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .25rem 1rem; padding-top: .5rem; padding-bottom: .5rem; }
@@ -36,7 +36,7 @@ h1 { font-size: clamp(1.9rem, 6vw, 2.6rem); margin: 0 0 .5rem; }
 h2 { font-size: 1.4rem; margin: 2.2rem 0 .5rem; }
 h3 { font-size: 1.1rem; margin: 0 0 .5rem; }
 p, ul, ol { margin: 0 0 1rem; }
-ul, ol { padding-left: 1.3rem; }
+ul, ol { padding-inline-start: 1.3rem; }
 li { margin-bottom: .35rem; }
 .small { font-size: .9rem; color: var(--muted); }
 .updated { color: var(--muted); font-weight: 600; }
@@ -89,15 +89,15 @@ details:target { border-color: var(--accent); }
 .lead-in { font-size: 1.15rem; color: var(--muted); margin: 0 0 1.25rem; }
 .on-page { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: .75rem 1rem .25rem; margin: 0 0 1.5rem; }
 .on-page ul { margin: .4rem 0 .5rem; }
-.steps { padding-left: 1.5rem; }
+.steps { padding-inline-start: 1.5rem; }
 .steps li { margin-bottom: .6rem; }
-.callout { border-left: 4px solid var(--accent); background: var(--surface); border-radius: 8px; padding: .6rem 1rem; margin: 0 0 1rem; }
+.callout { border-inline-start: 4px solid var(--accent); background: var(--surface); border-radius: 8px; padding: .6rem 1rem; margin: 0 0 1rem; }
 .callout p { margin: 0; }
 .callout.careful, .callout.limit { border-left-color: #c2410c; }
 .callout.example { border-left-style: dashed; }
 .table { overflow-x: auto; margin: 0 0 1rem; }
 table { border-collapse: collapse; width: 100%; font-size: .95rem; }
-th, td { text-align: left; padding: .45rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th, td { text-align: start; padding: .45rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
 th { background: var(--surface); }
 pre { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .8rem 1rem; overflow-x: auto; font: .9rem/1.5 var(--mono); }
 code { font-family: var(--mono); font-size: .92em; }
@@ -115,3 +115,6 @@ figcaption { color: var(--muted); font-size: .9rem; margin-top: .4rem; }
 .guide-card h2 { margin: 0 0 .25rem; font-size: 1.25rem; }
 .guide-list { list-style: none; padding: 0; }
 .guide-list li { padding: .35rem 0; }
+
+.lang-switch { margin: .6rem 0 0; font-size: .9rem; }
+.lang-switch [aria-current] { font-weight: 600; }

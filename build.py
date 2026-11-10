@@ -16,6 +16,38 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "docs"
 CFG = json.loads((ROOT / "site.config.json").read_text(encoding="utf-8"))
+# Translated legal pages: content/i18n/<lang>/<page>.md, added only after a native reader has approved them. A language with no file for a page
+# is simply not offered for that page, so nothing half-translated is ever published.
+LANGS = {
+    "en": {"name": "English", "dir": "ltr", "skip": "Skip to content", "privacy": "Privacy", "terms": "Terms", "switch": "Language",
+           "note": "{app} gives information, not financial advice.",
+           "desc": {"privacy": "How {app} handles your data: no accounts, no analytics, data on your phone.",
+                    "terms": "The terms for using {app}, including the financial disclaimer."}},
+    "tr": {"name": "T\u00fcrk\u00e7e", "dir": "ltr", "skip": "\u0130\u00e7eri\u011fe ge\u00e7", "privacy": "Gizlilik", "terms": "Ko\u015fullar", "switch": "Dil",
+           "note": "{app} finansal tavsiye de\u011fil, bilgi verir.",
+           "desc": {"privacy": "{app} verilerinizi nas\u0131l ele al\u0131r: hesap yok, analiz yok, veriler telefonunuzda.",
+                    "terms": "{app} kullan\u0131m ko\u015fullar\u0131 ve finansal sorumluluk reddi."}},
+    "fr": {"name": "Fran\u00e7ais", "dir": "ltr", "skip": "Aller au contenu", "privacy": "Confidentialit\u00e9", "terms": "Conditions", "switch": "Langue",
+           "note": "{app} fournit des informations, pas des conseils financiers.",
+           "desc": {"privacy": "Comment {app} traite vos donn\u00e9es : pas de compte, pas d\u2019analyse, donn\u00e9es sur votre t\u00e9l\u00e9phone.",
+                    "terms": "Les conditions d\u2019utilisation de {app}, y compris l\u2019avertissement financier."}},
+    "ar": {"name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629", "dir": "rtl", "skip": "\u062a\u062c\u0627\u0648\u0632 \u0625\u0644\u0649 \u0627\u0644\u0645\u062d\u062a\u0648\u0649",
+           "privacy": "\u0627\u0644\u062e\u0635\u0648\u0635\u064a\u0629", "terms": "\u0627\u0644\u0634\u0631\u0648\u0637", "switch": "\u0627\u0644\u0644\u063a\u0629",
+           "note": "\u062a\u0642\u062f\u0651\u0645 {app} \u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0648\u0644\u064a\u0633\u062a \u0646\u0635\u064a\u062d\u0629 \u0645\u0627\u0644\u064a\u0629.",
+           "desc": {"privacy": "\u0643\u064a\u0641 \u062a\u062a\u0639\u0627\u0645\u0644 {app} \u0645\u0639 \u0628\u064a\u0627\u0646\u0627\u062a\u0643: \u0628\u0644\u0627 \u062d\u0633\u0627\u0628\u0627\u062a \u0648\u0644\u0627 \u062a\u062d\u0644\u064a\u0644\u0627\u062a\u060c \u0648\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0639\u0644\u0649 \u0647\u0627\u062a\u0641\u0643.",
+                    "terms": "\u0634\u0631\u0648\u0637 \u0627\u0633\u062a\u062e\u062f\u0627\u0645 {app} \u0645\u0639 \u0625\u062e\u0644\u0627\u0621 \u0627\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0629 \u0627\u0644\u0645\u0627\u0644\u064a\u0629."}},
+}
+LEGAL_PAGES = ("privacy", "terms")
+
+
+def translated(lang: str, page: str) -> bool:
+    return lang == "en" or (ROOT / "content" / "i18n" / lang / f"{page}.md").exists()
+
+
+def page_url(lang: str, page: str) -> str:
+    return f"{page}/" if lang == "en" else f"{lang}/{page}/"
+
+
 TOKEN = re.compile(r"\{\{\s*([a-z_]+)\s*\}\}")
 
 
@@ -142,12 +174,32 @@ def markdown(src: str, root: str, img_root: str = "") -> tuple[str, str]:
 
 
 # ---------- pages ----------
-def render(page_path: str, title: str, description: str, body: str, root: str, current: str = "", wide: bool = False) -> None:
+def render(page_path: str, title: str, description: str, body: str, root: str, current: str = "", wide: bool = False,
+           lang: str = "en", legal_page: str = "") -> None:
     base = (ROOT / "templates" / "base.html").read_text(encoding="utf-8")
+    L = LANGS[lang]
     nav = []
-    for key, label, href in (("guide", "Guide", "guide/"), ("support", "Support", "support/"), ("privacy", "Privacy", "privacy/"), ("terms", "Terms", "terms/")):
+    if lang == "en":
+        items = (("guide", "Guide", "guide/"), ("support", "Support", "support/"), ("privacy", L["privacy"], "privacy/"), ("terms", L["terms"], "terms/"))
+    else:  # translated pages offer only what is translated
+        items = tuple((k, L[k], page_url(lang, k)) for k in LEGAL_PAGES if translated(lang, k))
+    for key, label, href in items:
         cur = ' aria-current="page"' if key == current else ""
         nav.append(f'<a href="{root}{href}"{cur}>{label}</a>')
+    # language switcher and hreflang: only for the legal pages, and only to languages that have this page
+    alternates, switcher = "", ""
+    if legal_page:
+        have = [code for code in LANGS if translated(code, legal_page)]
+        if len(have) > 1:
+            site = CFG["site_url"].rstrip("/")
+            alternates = "\n".join(f'<link rel="alternate" hreflang="{c}" href="{site}/{page_url(c, legal_page)}">' for c in have)
+            alternates += f'\n<link rel="alternate" hreflang="x-default" href="{site}/{page_url("en", legal_page)}">'
+            links = " &middot; ".join(
+                (f'<span aria-current="true">{LANGS[c]["name"]}</span>' if c == lang else f'<a href="{root}{page_url(c, legal_page)}" lang="{c}" hreflang="{c}">{LANGS[c]["name"]}</a>')
+                for c in have)
+            switcher = f'<p class="lang-switch" aria-label="{L["switch"]}">{links}</p>'
+    footer_links = (f'<a href="{root}guide/">Guide</a> &middot; <a href="{root}privacy/">Privacy</a> &middot; <a href="{root}terms/">Terms</a> &middot; <a href="{root}support/">Support</a>'
+                    if lang == "en" else " &middot; ".join(f'<a href="{root}{page_url(lang, k)}">{L[k]}</a>' for k in LEGAL_PAGES if translated(lang, k)))
     page = fill(
         base,
         {
@@ -159,6 +211,13 @@ def render(page_path: str, title: str, description: str, body: str, root: str, c
             "canonical": CFG["site_url"].rstrip("/") + "/" + ("" if page_path == "index.html" else page_path.replace("index.html", "")),
             "year_note": "",
             "main_class": "wrap wide" if wide else "wrap",
+            "lang": lang,
+            "dir": L["dir"],
+            "skip": L["skip"],
+            "note": L["note"].format(app=CFG["app_name"]),
+            "alternates": alternates,
+            "switcher": switcher,
+            "footer_links": footer_links,
         },
         where="base.html",
     )
@@ -178,8 +237,9 @@ def fragment(name: str, root: str) -> str:
     return fill((ROOT / "templates" / name).read_text(encoding="utf-8"), extra, where=name)
 
 
-def legal(md_name: str, root: str) -> tuple[str, str]:
-    raw = fill((ROOT / "content" / md_name).read_text(encoding="utf-8"), where=md_name)
+def legal(md_name: str, root: str, lang: str = "en") -> tuple[str, str]:
+    src = ROOT / "content" / md_name if lang == "en" else ROOT / "content" / "i18n" / lang / md_name
+    raw = fill(src.read_text(encoding="utf-8"), where=str(src))
     visible = re.sub(r"<!--.*?-->", "", raw, flags=re.S)
     left = re.findall(r"\[[^\]]+\](?!\()", visible)
     if left:
@@ -337,13 +397,17 @@ def main() -> None:
            fragment("index.html", "./"), "./")
 
     for key, md in (("privacy", "privacy.md"), ("terms", "terms.md")):
-        title, body = legal(md, "../")
-        head = f'<h1>{html.escape(title)}</h1>'
-        # the "Last updated" paragraph is the first <p>; give it a class for styling
-        body = body.replace("<p>Last updated:", '<p class="updated">Last updated:', 1)
-        desc = {"privacy": f"How {app} handles your data: no accounts, no analytics, data on your phone.",
-                "terms": f"The terms for using {app}, including the financial disclaimer."}[key]
-        render(f"{key}/index.html", f"{title} - {app}", desc, f'<article class="prose">\n{head}\n{body}\n</article>', "../", key)
+        for lang in LANGS:
+            if not translated(lang, key):
+                continue
+            root = "../" if lang == "en" else "../../"
+            title, body = legal(md, root, lang)
+            head = f'<h1>{html.escape(title)}</h1>'
+            # the "Last updated" paragraph is the first <p>; give it a class for styling
+            body = body.replace("<p>", '<p class="updated">', 1)
+            desc = LANGS[lang]["desc"][key].format(app=app)
+            render(page_url(lang, key) + "index.html", f"{title} - {app}", desc, f'<article class="prose">\n{head}\n{body}\n</article>', root, key,
+                   lang=lang, legal_page=key)
 
     render("support/index.html", f"Support - {app}", f"How to contact support for {app}, and answers to common questions.",
            fragment("support.html", "../"), "../", "support")
@@ -360,7 +424,7 @@ def main() -> None:
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
     base = CFG["site_url"].rstrip("/")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {base}/sitemap.xml\n", encoding="utf-8")
-    urls = ["", "support/", "privacy/", "terms/"] + guide_urls
+    urls = ["", "support/", "privacy/", "terms/"] + [page_url(l, k) for k in LEGAL_PAGES for l in LANGS if l != "en" and translated(l, k)] + guide_urls
     (OUT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"<url><loc>{base}/{u}</loc><lastmod>{CFG['effective_date']}</lastmod></url>\n" for u in urls)
