@@ -26,7 +26,7 @@ Whatever you leave for later stays a to-do. Today shows a **Finish setting up** 
 5. The next screen asks **What shall we set up?**, with six things you can tick: **Bank accounts and cash**, **Regular income**, **Credit cards**, **Regular spending**, **Loans and debts**, **Investments and assets**. Tick what applies to you and tap **Start**. You can also choose **Add statements instead** to import PDF or CSV statements.
 6. Do one screen per ticked part. Each has its own add button - **Add an account**, **Add income**, **Add a card**, **Add a bill**, **Add** (a menu: a loan with instalments, or money with a person), **Add a holding** - plus **Next** at the bottom (or **I don't have any** if that part turned out to be empty) and **Do this later**.
 7. On every screen except *Investments and assets* you can instead type a sentence in the **Or just type it** box and tap **Read it**. Damla reads it on the phone, fills the form and shows what it understood for you to check before anything is saved.
-8. At the end you reach **All set for now**: your first forecast, what it rests on, and anything you postponed as buttons you can go back to. Tap **Go to Today**.
+8. At the end you reach **All set for now**: your first forecast, what it rests on, and anything you postponed as buttons you can go back to. **Set up automatic capture** opens the step-by-step wizard for bank texts, emails and Wallet payments; you can also do that later from Settings. Tap **Go to Today** when you are done.
 
 What each part asks for, so you can prepare:
 
