@@ -28,7 +28,7 @@ Bir banka mesajı ulaşmadığında:
 
 > **Tip:** Test ederken otomasyonda **Çalıştırıldığında Bildir** seçeneğini açık bırakabilirsiniz; Otomasyonlar ekranındaki adımlar, görürseniz kapatmanızı söyler.
 
-> **Tip:** Kısayollar'da Add Action'a dokunduğunuzda Damla'nın eylemlerinden biri eksikse, Damla'yı açın, Kısayollar'ı zorla kapatın ve yeniden açın. Hâlâ eksikse iPhone'u yeniden başlatın. Otomasyonlar ekranı, **Damla eylemleri** altında aranacak dört eylemi listeler.
+> **Tip:** Kısayollar'da Eylem Ekle'ye dokunduğunuzda Damla'nın eylemlerinden biri eksikse, Damla'yı açın, Kısayollar'ı zorla kapatın ve yeniden açın. Hâlâ eksikse iPhone'u yeniden başlatın. Otomasyonlar ekranı, **Damla eylemleri** altında aranacak dört eylemi listeler.
 
 ## Bilmeniz iyi olur
 

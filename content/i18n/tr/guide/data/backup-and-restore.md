@@ -26,7 +26,7 @@ Yedekler Ayarlar'da bulunur. Bugün ekranını açın, sağ üstteki dişliye do
 3. En az 8 karakterli bir parola yazın ve **Dışa aktar**'a dokunun.
 4. Beliren paylaş düğmesine dokunun. Dosyayı Files ya da iCloud Drive'a kaydedin veya Mac'inize gönderin.
 
-> **Careful:** Parola, dosyanın tek anahtarıdır. Damla'nın geliştiricisi dahil kimse onsuz yedeği açamaz ve Damla onu kurtaramaz. İfadeyi güvenli, dosyadan ayrı bir yerde saklayın.
+> **Careful:** Parola, dosyanın tek anahtarıdır. Damla'nın geliştiricisi dahil kimse onsuz yedeği açamaz ve Damla onu kurtaramaz. Parolayı güvenli, dosyadan ayrı bir yerde saklayın.
 
 > **Note:** Geri yükleme, bu telefondaki her şeyin yerine yedeği koyar. Bir yedeği zaten var olanla birleştiremezsiniz.
 

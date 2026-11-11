@@ -56,7 +56,7 @@ order: 10
 
 ## مقالات ذات صلة
 
-- [كيف تعمل الالتقاط التلقائي](/guide/capture/how-automatic-capture-works/)
+- [كيف يعمل الالتقاط التلقائي](/guide/capture/how-automatic-capture-works/)
 - [ما يتجاهله Damla، والتراجع عن تنبيه](/guide/capture/what-damla-ignores/)
 - [صندوق الوارد](/guide/recording/the-inbox/)
 - [التوقعات والمبلغ الآمن للصرف](/guide/planning/forecast-and-safe-to-spend/)
