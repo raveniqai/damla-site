@@ -264,17 +264,22 @@ def render(rel: str, title: str, description: str, body: str, current: str = "",
             alternates = "\n".join(f'<link rel="alternate" hreflang="{c}" href="{site}/{url_for(c, rel)}">' for c in have)
             alternates += f'\n<link rel="alternate" hreflang="x-default" href="{site}/{url_for("en", rel)}">'
         # every language is offered: the same page when it exists there, otherwise that language's home page
-        links = []
+        FLAGS = {"en": ("\U0001F1EC\U0001F1E7", "EN"), "tr": ("\U0001F1F9\U0001F1F7", "TR"), "fr": ("\U0001F1EB\U0001F1F7", "FR"), "ar": ("\U0001F1F8\U0001F1E6", "AR")}
+        items = []
         for c in LANGS:
             target = rel if exists(c, rel) else ("" if exists(c, "") else None)
             if target is None:
                 continue
+            flag, code = FLAGS.get(c, ("", c.upper()))
+            inner = f'<span class="flag" aria-hidden="true">{flag}</span><span class="lname">{LANGS[c]["name"]}</span><span class="lcode" aria-hidden="true">{code}</span>'
             if c == lang:
-                links.append(f'<span aria-current="true">{LANGS[c]["name"]}</span>')
+                items.append(f'<li><span aria-current="true" lang="{c}">{inner}</span></li>')
             else:
-                links.append(f'<a href="{root}{url_for(c, target)}" lang="{c}" hreflang="{c}">{LANGS[c]["name"]}</a>')
-        if len(links) > 1:
-            switcher = f'<nav class="lang-switch" aria-label="{L["switch"]}">' + " &middot; ".join(links) + "</nav>"
+                items.append(f'<li><a href="{root}{url_for(c, target)}" lang="{c}" hreflang="{c}">{inner}</a></li>')
+        if len(items) > 1:
+            flag, code = FLAGS.get(lang, ("", lang.upper()))
+            switcher = (f'<details class="lang-switch"><summary aria-label="{L["switch"]}: {LANGS[lang]["name"]}"><span class="flag" aria-hidden="true">{flag}</span>'
+                        f'<span class="lcode">{code}</span></summary><ul>' + "".join(items) + "</ul></details>")
     home = f'{root}{url_for(lang, "")}' if exists(lang, "") else root
     canon_rel = "" if page_path == "index.html" else page_path.replace("index.html", "")
     page = fill(
