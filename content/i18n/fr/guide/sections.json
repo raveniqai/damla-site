@@ -1,0 +1,47 @@
+[
+ {
+  "id": "start",
+  "title": "Commencez ici",
+  "blurb": "À quoi sert Damla, comment la configurer, et à quoi ressemble une journée avec l’app."
+ },
+ {
+  "id": "recording",
+  "title": "Enregistrer l’argent",
+  "blurb": "Phrases, formulaires, messages et boîte de réception."
+ },
+ {
+  "id": "accounts",
+  "title": "Comptes, cartes et personnes",
+  "blurb": "Banques, épargne, cartes, prêts et qui doit quoi à qui."
+ },
+ {
+  "id": "holdings",
+  "title": "Placements",
+  "blurb": "Investissements, biens immobiliers, voitures et achats échelonnés."
+ },
+ {
+  "id": "planning",
+  "title": "Planification",
+  "blurb": "La prévision, les scénarios, l’argent récurrent et les engagements."
+ },
+ {
+  "id": "insights",
+  "title": "Aperçu",
+  "blurb": "Où est passé l’argent, budgets, tendances et valeur nette."
+ },
+ {
+  "id": "capture",
+  "title": "Capture automatique",
+  "blurb": "Messages bancaires, e-mails, paiements Wallet et relevés."
+ },
+ {
+  "id": "data",
+  "title": "Réglages, sauvegarde et confidentialité",
+  "blurb": "Où se trouvent les choses, garder vos données en sécurité, et ce qui reste sur votre téléphone."
+ },
+ {
+  "id": "help",
+  "title": "Aide",
+  "blurb": "Quand quelque chose semble faux."
+ }
+]

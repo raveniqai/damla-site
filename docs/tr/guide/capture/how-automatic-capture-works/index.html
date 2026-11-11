@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Otomatik kayıt nasıl çalışır - Damla kılavuzu</title>
+<meta name="description" content="Banka metinleri, e-postalar, Wallet ödemeleri ve hesap özetleri; Damla&#x27;nın her biriyle ne yaptığı.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F4F6FA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1220" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://damla.raveniq.ai/tr/guide/capture/how-automatic-capture-works/">
+<link rel="alternate" hreflang="en" href="https://damla.raveniq.ai/guide/capture/how-automatic-capture-works/">
+<link rel="alternate" hreflang="tr" href="https://damla.raveniq.ai/tr/guide/capture/how-automatic-capture-works/">
+<link rel="alternate" hreflang="fr" href="https://damla.raveniq.ai/fr/guide/capture/how-automatic-capture-works/">
+<link rel="alternate" hreflang="ar" href="https://damla.raveniq.ai/ar/guide/capture/how-automatic-capture-works/">
+<link rel="alternate" hreflang="x-default" href="https://damla.raveniq.ai/guide/capture/how-automatic-capture-works/">
+<link rel="icon" href="../../../../favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="../../../../favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../../../apple-touch-icon.png">
+<link rel="stylesheet" href="../../../../style.css">
+</head>
+<body>
+<a class="skip" href="#main">İçeriğe geç</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="../../../../tr/"><img src="../../../../favicon-32.png" width="28" height="28" alt="">Damla</a>
+    <nav aria-label="Main">
+<a href="../../../../tr/guide/" aria-current="page">Kılavuz</a>
+<a href="../../../../tr/support/">Destek</a>
+<a href="../../../../tr/privacy/">Gizlilik</a>
+<a href="../../../../tr/terms/">Koşullar</a>
+    </nav>
+    <nav class="lang-switch" aria-label="Dil"><a href="../../../../guide/capture/how-automatic-capture-works/" lang="en" hreflang="en">English</a> &middot; <span aria-current="true">Türkçe</span> &middot; <a href="../../../../fr/guide/capture/how-automatic-capture-works/" lang="fr" hreflang="fr">Français</a> &middot; <a href="../../../../ar/guide/capture/how-automatic-capture-works/" lang="ar" hreflang="ar">العربية</a></nav>
+  </div>
+</header>
+<main id="main" class="wrap wide">
+<div class="guide-layout"><details class="guide-menu" open><summary>Kılavuzda gezin</summary>
+<div class="guide-nav" role="navigation" aria-label="Kılavuz">
+<a class="guide-home" href="../../../../tr/guide/">Tüm konular</a>
+<details><summary>Buradan başlayın</summary><ul>
+<li><a href="../../../../tr/guide/start/what-damla-is-for/">Damla ne işe yarar</a></li>
+<li><a href="../../../../tr/guide/start/first-setup/">Defterlerinizi kurmak</a></li>
+<li><a href="../../../../tr/guide/start/a-day-with-damla/">Damla ile bir gün</a></li>
+<li><a href="../../../../tr/guide/start/plan-and-free-trial/">Ücretsiz deneme ve abonelik</a></li>
+</ul></details>
+<details><summary>Parayı kaydetme</summary><ul>
+<li><a href="../../../../tr/guide/recording/type-a-sentence/">Bir cümle yazın</a></li>
+<li><a href="../../../../tr/guide/recording/fill-a-form/">Form doldurun</a></li>
+<li><a href="../../../../tr/guide/recording/paste-or-share/">Bir mesajı yapıştırın veya paylaşın</a></li>
+<li><a href="../../../../tr/guide/recording/the-inbox/">Gelen kutusu</a></li>
+<li><a href="../../../../tr/guide/recording/the-activity-list/">Hareket listesi</a></li>
+</ul></details>
+<details><summary>Hesaplar, kartlar ve kişiler</summary><ul>
+<li><a href="../../../../tr/guide/accounts/accounts-page/">Hesaplar sayfası</a></li>
+<li><a href="../../../../tr/guide/accounts/credit-cards/">Kredi kartları</a></li>
+<li><a href="../../../../tr/guide/accounts/loans/">Krediler</a></li>
+<li><a href="../../../../tr/guide/accounts/people-lent-and-borrowed/">Kişiler: verilen ve alınan borçlar</a></li>
+<li><a href="../../../../tr/guide/accounts/logos-and-account-details/">Logolar ve hesap ayrıntıları</a></li>
+<li><a href="../../../../tr/guide/accounts/starting-balances/">Başlangıç bakiyeleri ve düzeltmeler</a></li>
+</ul></details>
+<details><summary>Varlıklar</summary><ul>
+<li><a href="../../../../tr/guide/holdings/investments/">Yatırımlar ve varlıklar</a></li>
+<li><a href="../../../../tr/guide/holdings/property-and-cars/">Taşınmaz ve araçlar</a></li>
+<li><a href="../../../../tr/guide/holdings/staged-purchases/">Aşamalı alımlar</a></li>
+<li><a href="../../../../tr/guide/holdings/prices-and-exchange-rates/">Fiyatlar ve döviz kurları</a></li>
+</ul></details>
+<details><summary>Planlama</summary><ul>
+<li><a href="../../../../tr/guide/planning/forecast-and-safe-to-spend/">Tahmin ve güvenli harcama</a></li>
+<li><a href="../../../../tr/guide/planning/what-if/">Ya olursa</a></li>
+<li><a href="../../../../tr/guide/planning/ask-damla/">Damla’ya sor</a></li>
+<li><a href="../../../../tr/guide/planning/income-and-bills/">Tekrarlayan gelir ve faturalar</a></li>
+<li><a href="../../../../tr/guide/planning/bills-coming/">Yaklaşan faturalar</a></li>
+<li><a href="../../../../tr/guide/planning/payees-and-categories/">Alıcılar ve kategoriler</a></li>
+<li><a href="../../../../tr/guide/planning/set-aside/">Kenara ayır</a></li>
+<li><a href="../../../../tr/guide/planning/instalment-plans/">Taksit planları</a></li>
+</ul></details>
+<details><summary>Özet</summary><ul>
+<li><a href="../../../../tr/guide/insights/where-the-money-went/">Paranın gittiği yer</a></li>
+<li><a href="../../../../tr/guide/insights/budget/">Bütçe</a></li>
+<li><a href="../../../../tr/guide/insights/trends-and-net-worth/">Eğilimler ve net varlık</a></li>
+<li><a href="../../../../tr/guide/insights/what-i-noticed/">Fark ettiklerim</a></li>
+</ul></details>
+<details open><summary>Otomatik kayıt</summary><ul>
+<li><a href="../../../../tr/guide/capture/how-automatic-capture-works/" aria-current="page">Otomatik kayıt nasıl çalışır</a></li>
+<li><a href="../../../../tr/guide/capture/setup-wizard/">Otomasyon kurulum sihirbazı</a></li>
+<li><a href="../../../../tr/guide/capture/bank-texts-and-emails/">Banka kısa mesajları ve e-postalar</a></li>
+<li><a href="../../../../tr/guide/capture/apple-pay-and-wallet/">Apple Pay ve Wallet ödemeleri</a></li>
+<li><a href="../../../../tr/guide/capture/importing-statements/">Ekstre içe aktarma</a></li>
+<li><a href="../../../../tr/guide/capture/screenshots-of-your-bank-app/">Banka uygulamanızın ekran görüntüleri</a></li>
+<li><a href="../../../../tr/guide/capture/what-damla-ignores/">Damla&#x27;nın yok saydıkları ve bir bildirimi geri alma</a></li>
+</ul></details>
+<details><summary>Ayarlar, yedekleme ve gizlilik</summary><ul>
+<li><a href="../../../../tr/guide/data/settings-map/">Ayarlar, sayfa sayfa</a></li>
+<li><a href="../../../../tr/guide/data/backup-and-restore/">Yedekleme ve geri yükleme</a></li>
+<li><a href="../../../../tr/guide/data/export-and-family-snapshot/">Dışa aktarma ve aile görüntüsü</a></li>
+<li><a href="../../../../tr/guide/data/privacy-and-your-data/">Gizlilik ve verileriniz</a></li>
+</ul></details>
+<details><summary>Yardım</summary><ul>
+<li><a href="../../../../tr/guide/help/troubleshooting/">Sorun giderme</a></li>
+</ul></details>
+</div></details><article class="prose guide-page"><p class="crumb"><a href="../../../../tr/guide/">Kılavuz</a> &rsaquo; Otomatik kayıt</p><h1>Otomatik kayıt nasıl çalışır</h1><p class="lead-in">Banka metinleri, e-postalar, Wallet ödemeleri ve hesap özetleri; Damla'nın her biriyle ne yaptığı.</p><div class="on-page" role="navigation" aria-label="Bu sayfada"><strong>Bu sayfada</strong><ul><li><a href="#mesajlar-damla-ya-nas-l-ula-r">Mesajlar Damla'ya nasıl ulaşır</a></li><li><a href="#bir-mesaja-ne-olur">Bir mesaja ne olur</a></li><li><a href="#ne-oldu-unu-nereden-kontrol-edersiniz">Ne olduğunu nereden kontrol edersiniz</a></li><li><a href="#bilmenizde-fayda-var">Bilmenizde fayda var</a></li><li><a href="#i-lgili">İlgili</a></li></ul></div><p>Otomatik kayıt, bir banka mesajının siz hiçbir şey yazmadan bir işleme dönüşmesinin yoludur. Damla kendisine ulaşan metinleri, e-postaları, Wallet ödemelerini ve hesap özeti dosyalarını okur, her birinin ne olduğunu anlar; sonra ya ekler, ya size sorar, ya da dokunmaz.</p>
+<h2 id="mesajlar-damla-ya-nas-l-ula-r">Mesajlar Damla'ya nasıl ulaşır</h2>
+<p>iOS, uygulamalara mesajlara veya e-postalara erişim vermez; bu yüzden Damla onları kendi kendine asla okumaz. Bir şey Damla'ya yalnızca siz gönderdiğinizde ulaşır, üç yoldan biriyle:</p>
+<ul><li><strong>Kurduğunuz bir Shortcut</strong>, yeni gelen her metni, e-postayı veya Wallet ödemesini geldiği anda Damla'ya iletir.</li><li><strong>Paylaş menüsü</strong>: bir mesajı seçip Damla'ya paylaşırsınız.</li><li><strong>Dosya seçici</strong>: içe aktarmak için hesap özeti dosyalarını seçersiniz.</li></ul>
+<p>Her şey telefonda okunur. Hiçbir şey yüklenmez.</p>
+<h2 id="bir-mesaja-ne-olur">Bir mesaja ne olur</h2>
+<p>Damla her mesajı aynı kural listesiyle, bu sırayla karşılaştırır ve uyan ilk kuralda durur.</p>
+<ol class="steps"><li><strong>Tek kullanımlık ve onay kodları atılır.</strong> Mesajın sözleri hiç saklanmaz, böylece bir kod sonradan geri okunamaz. Geriye kalan tek şey, günlükte "Tek kullanımlık kod: asla saklanmaz" diyen bir satırdır.</li><li><strong>Bir fatura bildirimi fatura olarak hatırlanır.</strong> "Faturanız hazır" bir ödeme değildir: para henüz hareket etmedi. Damla bunu beklenen bir fatura olarak tutar; onu daha sonra ödeyen kart yükü tek gerçek işlemdir.</li><li><strong>Reklamlar, limit ve kur bildirimleri, hatırlatmalar ve duyurulan gelecek yüklemeler atlanır.</strong> Bir tutar anılır ama para hareket etmemiştir. Böyle bir mesaj parayla ilgiliyse Damla ilk sözlerini günlüğe yazar; böylece yanlış bir karar verdiyse görürsünüz.</li><li><strong>Net bir banka bildirimi hemen eklenir.</strong> Kart veya hesap haneleri hesaplarınızdan biriyle eşleşen bir alışveriş, iade ya da gelir doğrudan işlem olur. Kart ödemeleri, iadeler ve havaleler tanınır. Kategori, o alıcıyı daha önce nasıl sınıflandırdığınıza göre gelir; harcamalar için <strong>Diğer</strong>'e, giren para için <strong>Diğer gelir</strong>'e düşer.</li><li><strong>Net olmayan her şey Gelen Kutusu'nda</strong> bir dokunuş için bekler. Bir taahhüt yaratan hiçbir şey — bir fatura, bir kredi, bir taksit planı — onayınız olmadan eklenmez.</li><li><strong>Parayla hiç ilgisi olmayan bir mesaj atılır.</strong> Saklanmaz ve günlüğe yazılmaz; böylece özel bir mesaj asla gelen kutusuna ya da günlüğe düşmez.</li></ol>
+<h2 id="ne-oldu-unu-nereden-kontrol-edersiniz">Ne olduğunu nereden kontrol edersiniz</h2>
+<ul><li><strong>Son bildirimler</strong> (Ayarlar &gt; Banka mesajları ve hesap özetleri) son 50 bildirimin günlüğüdür, en yenisi önce; her birinde kısa bir gerekçe vardır: Eklendi, Gelen kutusunda bekliyor (ve nedeni), Zaten kayıtlı, Yok sayıldı ya da yaklaşan bir fatura not edildi. Bir banka mesajı geldiği hâlde burada hiçbir şey görünmüyorsa, Shortcut çalışmamıştır.</li><li><strong>Gelen Kutusu</strong>, Bugün üzerinde <strong>N onayınızı bekliyor</strong> olarak görünür. Bir öğeye dokunup <strong>Cümleyle ekle</strong>'de açın; kontrol etmeniz için orada sizin için yeniden okunur. Kaydettiğinizde Gelen Kutusu'ndan çıkar; <strong>Vazgeç</strong> ise hiçbir şey eklemeden onu çıkarır.</li><li>Damla'nın işlem yaptığı bir bildirim geri alınabilir: Son bildirimler'de satırda sağa kaydırıp <strong>Geri al</strong>'a dokunun. Eklediği işlem silinir ya da not ettiği fatura unutulur.</li></ul>
+<h2 id="bilmenizde-fayda-var">Bilmenizde fayda var</h2>
+<ul><li><strong>Aynı bildirim iki kez gelirse bir kez eklenir.</strong> Bankanın metni, e-postası ya da Wallet tarafından yeniden bildirilen bir alışveriş zaten kayıtlı görünür. Aynı tutarın birkaç dakika içindeki ikinci bildirimi, karar vermeniz için Gelen Kutusu'nda bekler.</li><li><strong>Yeni bir karttan gelen ilk bildirim Gelen Kutusu'nda bekler</strong>, çünkü Damla o kartın son hanelerini henüz bilmez. Bir kez tamamlayın, Damla onları öğrenir.</li><li><strong>Telefon kilitliyken gelen bir mesaj</strong> bekler ve telefonun kilidini açtıktan sonra uygulamayı bir sonraki açışınızda eklenir. Defterleriniz salt okunursa, tekrar düzenleyebilir hâle gelene kadar o kuyrukta kalır.</li><li><strong>Bir hesap özeti PDF'i</strong>, Shortcut ile gönderildiyse kuyruğa alınır. Bugün, "Hesap özetleri veya ekran görüntüleri. Siz onaylayana kadar hiçbir şey eklenmez" notuyla <strong>N incelenmeyi bekliyor</strong> gösterir; hiçbir şey eklenmeden önce siz onu incelersiniz.</li><li><strong>Telefonda Apple Intelligence bulunduğu durumlarda</strong>, model metinden yalnızca alanlar okuyabilir. Döndürdüğü her sayı ve ad metinde geçmek zorundadır, aksi hâlde yok sayılır; okuduğu şey siz görmeden asla kaydedilmez.</li><li><strong>Okuma ifadeye göredir ve kusursuz değildir.</strong> Ödeme gibi ifade edilmiş bir teklif arada geçebilir; alışılmadık bir ifade ise eklenmek yerine Gelen Kutusu'nda bekleyebilir. Her Shortcut'u bankanızın göndericisine ya da konusuna sınırlayın; böylece alakasız mesajlar asla Damla'ya gönderilmez.</li></ul>
+<h2 id="i-lgili">İlgili</h2>
+<ul><li><a href="../../../../tr/guide/capture/setup-wizard/">Otomasyon kurulum sihirbazı</a></li><li><a href="../../../../tr/guide/recording/the-inbox/">Gelen kutusu</a></li><li><a href="../../../../tr/guide/capture/what-damla-ignores/">Damla'nın yok saydıkları ve bir bildirimi geri alma</a></li><li><a href="../../../../tr/guide/capture/importing-statements/">Hesap özeti içe aktarma</a></li></ul>
+<figure><img src="../../../../tr/guide/img/damla-automations.png" alt="Ayarlar &gt; Banka mesajları ve hesap özetleri &gt; Otomasyonlar." loading="lazy"><figcaption>Ayarlar &gt; Banka mesajları ve hesap özetleri &gt; Otomasyonlar.</figcaption></figure><p class="small">Anlaşılmayan ya da eksik bir şey mi var? <span class="email">support@raveniq.ai</span> adresine yazın ve hangi sayfa olduğunu belirtin.</p><div class="pager" role="navigation" aria-label="Önceki ve sonraki"><a rel="prev" href="../../../../tr/guide/insights/what-i-noticed/">&larr; Fark ettiklerim</a><a rel="next" href="../../../../tr/guide/capture/setup-wizard/">Otomasyon kurulum sihirbazı &rarr;</a></div></article></div><script src="../../../../guide/search.js" defer></script>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Damla finansal tavsiye değil, bilgi verir.</p>
+    <p>RavenIQ.</p>
+    <p><a href="../../../../tr/guide/">Kılavuz</a> &middot; <a href="../../../../tr/support/">Destek</a> &middot; <a href="../../../../tr/privacy/">Gizlilik</a> &middot; <a href="../../../../tr/terms/">Koşullar</a></p>
+  </div>
+</footer>
+</body>
+</html>

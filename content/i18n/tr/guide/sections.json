@@ -1,0 +1,47 @@
+[
+ {
+  "id": "start",
+  "title": "Buradan başlayın",
+  "blurb": "Damla ne işe yarar, kurulum ve onunla bir günün nasıl geçtiği."
+ },
+ {
+  "id": "recording",
+  "title": "Parayı kaydetme",
+  "blurb": "Cümleler, formlar, mesajlar ve gelen kutusu."
+ },
+ {
+  "id": "accounts",
+  "title": "Hesaplar, kartlar ve kişiler",
+  "blurb": "Bankalar, birikimler, kartlar, krediler ve kim kime borçlu."
+ },
+ {
+  "id": "holdings",
+  "title": "Varlıklar",
+  "blurb": "Yatırımlar, mülkler, arabalar ve aşamalı alımlar."
+ },
+ {
+  "id": "planning",
+  "title": "Planlama",
+  "blurb": "Öngörü, varsayım senaryoları, tekrarlayan paralar ve taahhütler."
+ },
+ {
+  "id": "insights",
+  "title": "Özet",
+  "blurb": "Paranın nereye gittiği, bütçeler, eğilimler ve net değer."
+ },
+ {
+  "id": "capture",
+  "title": "Otomatik kayıt",
+  "blurb": "Banka metinleri, e-postalar, Wallet ödemeleri ve hesap dökümleri."
+ },
+ {
+  "id": "data",
+  "title": "Ayarlar, yedekleme ve gizlilik",
+  "blurb": "Her şeyin nerede olduğu, verilerinizi güvende tutma ve telefonunuzda kalanlar."
+ },
+ {
+  "id": "help",
+  "title": "Yardım",
+  "blurb": "Bir şey yanlış göründüğünde."
+ }
+]

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>النسخ الاحتياطي والاستعادة - دليل Damla</title>
+<meta name="description" content="نسخ احتياطية مشفّرة إلى مجلد تختاره، وكيفية الاستعادة.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F4F6FA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1220" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://damla.raveniq.ai/ar/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="en" href="https://damla.raveniq.ai/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="tr" href="https://damla.raveniq.ai/tr/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="fr" href="https://damla.raveniq.ai/fr/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="ar" href="https://damla.raveniq.ai/ar/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="x-default" href="https://damla.raveniq.ai/guide/data/backup-and-restore/">
+<link rel="icon" href="../../../../favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="../../../../favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../../../apple-touch-icon.png">
+<link rel="stylesheet" href="../../../../style.css">
+</head>
+<body>
+<a class="skip" href="#main">تجاوز إلى المحتوى</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="../../../../ar/"><img src="../../../../favicon-32.png" width="28" height="28" alt="">Damla</a>
+    <nav aria-label="Main">
+<a href="../../../../ar/guide/" aria-current="page">الدليل</a>
+<a href="../../../../ar/support/">الدعم</a>
+<a href="../../../../ar/privacy/">الخصوصية</a>
+<a href="../../../../ar/terms/">الشروط</a>
+    </nav>
+    <nav class="lang-switch" aria-label="اللغة"><a href="../../../../guide/data/backup-and-restore/" lang="en" hreflang="en">English</a> &middot; <a href="../../../../tr/guide/data/backup-and-restore/" lang="tr" hreflang="tr">Türkçe</a> &middot; <a href="../../../../fr/guide/data/backup-and-restore/" lang="fr" hreflang="fr">Français</a> &middot; <span aria-current="true">العربية</span></nav>
+  </div>
+</header>
+<main id="main" class="wrap wide">
+<div class="guide-layout"><details class="guide-menu" open><summary>تصفّح الدليل</summary>
+<div class="guide-nav" role="navigation" aria-label="الدليل">
+<a class="guide-home" href="../../../../ar/guide/">كل المواضيع</a>
+<details><summary>ابدأ من هنا</summary><ul>
+<li><a href="../../../../ar/guide/start/what-damla-is-for/">ما الغرض من Damla</a></li>
+<li><a href="../../../../ar/guide/start/first-setup/">إعداد دفاتك</a></li>
+<li><a href="../../../../ar/guide/start/a-day-with-damla/">يوم مع Damla</a></li>
+<li><a href="../../../../ar/guide/start/plan-and-free-trial/">الفترة التجريبية المجانية والاشتراك</a></li>
+</ul></details>
+<details><summary>تسجيل المال</summary><ul>
+<li><a href="../../../../ar/guide/recording/type-a-sentence/">اكتب جملة</a></li>
+<li><a href="../../../../ar/guide/recording/fill-a-form/">املأ نموذجًا</a></li>
+<li><a href="../../../../ar/guide/recording/paste-or-share/">الصق أو شارك رسالة</a></li>
+<li><a href="../../../../ar/guide/recording/the-inbox/">الوارد</a></li>
+<li><a href="../../../../ar/guide/recording/the-activity-list/">قائمة النشاط</a></li>
+</ul></details>
+<details><summary>الحسابات والبطاقات والأشخاص</summary><ul>
+<li><a href="../../../../ar/guide/accounts/accounts-page/">صفحة الحسابات</a></li>
+<li><a href="../../../../ar/guide/accounts/credit-cards/">بطاقات الائتمان</a></li>
+<li><a href="../../../../ar/guide/accounts/loans/">القروض</a></li>
+<li><a href="../../../../ar/guide/accounts/people-lent-and-borrowed/">الأشخاص: ما أقرضته وما اقترضته</a></li>
+<li><a href="../../../../ar/guide/accounts/logos-and-account-details/">الشعارات وتفاصيل الحساب</a></li>
+<li><a href="../../../../ar/guide/accounts/starting-balances/">الأرصدة الابتدائية والتعديلات</a></li>
+</ul></details>
+<details><summary>استثمارات</summary><ul>
+<li><a href="../../../../ar/guide/holdings/investments/">الاستثمارات والممتلكات</a></li>
+<li><a href="../../../../ar/guide/holdings/property-and-cars/">العقارات والسيارات</a></li>
+<li><a href="../../../../ar/guide/holdings/staged-purchases/">مشتريات على مراحل</a></li>
+<li><a href="../../../../ar/guide/holdings/prices-and-exchange-rates/">الأسعار وأسعار الصرف</a></li>
+</ul></details>
+<details><summary>التخطيط</summary><ul>
+<li><a href="../../../../ar/guide/planning/forecast-and-safe-to-spend/">التوقعات والمبلغ الآمن للصرف</a></li>
+<li><a href="../../../../ar/guide/planning/what-if/">ماذا لو</a></li>
+<li><a href="../../../../ar/guide/planning/ask-damla/">اسأل Damla</a></li>
+<li><a href="../../../../ar/guide/planning/income-and-bills/">الدخل والفواتير التي تتكرر</a></li>
+<li><a href="../../../../ar/guide/planning/bills-coming/">فواتير قادمة</a></li>
+<li><a href="../../../../ar/guide/planning/payees-and-categories/">المستفيدون والفئات</a></li>
+<li><a href="../../../../ar/guide/planning/set-aside/">ادخار</a></li>
+<li><a href="../../../../ar/guide/planning/instalment-plans/">خطط الأقساط</a></li>
+</ul></details>
+<details><summary>نظرة عامة</summary><ul>
+<li><a href="../../../../ar/guide/insights/where-the-money-went/">أين ذهب المال</a></li>
+<li><a href="../../../../ar/guide/insights/budget/">الميزانية</a></li>
+<li><a href="../../../../ar/guide/insights/trends-and-net-worth/">الاتجاهات وصافي الثروة</a></li>
+<li><a href="../../../../ar/guide/insights/what-i-noticed/">ما لاحظته</a></li>
+</ul></details>
+<details><summary>الالتقاط التلقائي</summary><ul>
+<li><a href="../../../../ar/guide/capture/how-automatic-capture-works/">كيف يعمل الالتقاط التلقائي</a></li>
+<li><a href="../../../../ar/guide/capture/setup-wizard/">معالج إعداد الأتمتة</a></li>
+<li><a href="../../../../ar/guide/capture/bank-texts-and-emails/">الرسائل النصية من البنك والرسائل الإلكترونية</a></li>
+<li><a href="../../../../ar/guide/capture/apple-pay-and-wallet/">مدفوعات Apple Pay وWallet</a></li>
+<li><a href="../../../../ar/guide/capture/importing-statements/">استيراد كشف حساب</a></li>
+<li><a href="../../../../ar/guide/capture/screenshots-of-your-bank-app/">لقطات شاشة تطبيق بنكك</a></li>
+<li><a href="../../../../ar/guide/capture/what-damla-ignores/">ما تتجاهله Damla، وكيفية التراجع عن تنبيه</a></li>
+</ul></details>
+<details open><summary>الإعدادات والنسخ الاحتياطي والخصوصية</summary><ul>
+<li><a href="../../../../ar/guide/data/settings-map/">الإعدادات، صفحة بصفحة</a></li>
+<li><a href="../../../../ar/guide/data/backup-and-restore/" aria-current="page">النسخ الاحتياطي والاستعادة</a></li>
+<li><a href="../../../../ar/guide/data/export-and-family-snapshot/">التصدير ولقطة العائلة</a></li>
+<li><a href="../../../../ar/guide/data/privacy-and-your-data/">الخصوصية وبياناتك</a></li>
+</ul></details>
+<details><summary>المساعدة</summary><ul>
+<li><a href="../../../../ar/guide/help/troubleshooting/">استكشاف الأخطاء وإصلاحها</a></li>
+</ul></details>
+</div></details><article class="prose guide-page"><p class="crumb"><a href="../../../../ar/guide/">الدليل</a> &rsaquo; الإعدادات والنسخ الاحتياطي والخصوصية</p><h1>النسخ الاحتياطي والاستعادة</h1><p class="lead-in">نسخ احتياطية مشفّرة إلى مجلد تختاره، وكيفية الاستعادة.</p><p>النسخة الاحتياطية ملف واحد مشفّر يضم كل ما تحتفظ به Damla: حساباتك، ومعاملاتك، وخططك، وإعداداتك. تقوم بإنشائها للحفاظ على أمان دفاترك، ولمعادتها إذا حذفت التطبيق.</p>
+<h2 id="">متى تستخدمه</h2>
+<ul><li>قبل حذف التطبيق. فحذف التطبيق يمحو بياناته.</li><li>قبل أي تغيير كبير في سجلاتك، أو قبل تثبيت نسخة تجريبية أو ما قبل الإصدار من التطبيق.</li><li>عندما تريد نسخة تُنشئها Damla كل يوم من تلقاء نفسها، دون أن يُطلب منك ذلك.</li><li>عندما تريد نسخة كاملة من دفاترك، محفوظة خارج التطبيق وفي يديك.</li></ul>
+<p>توجد النسخ الاحتياطية في الإعدادات. افتح «اليوم»، وانقر أيقونة الترس أعلى اليمين، ثم <strong>النسخ الاحتياطي وبياناتك</strong>. كل ما تحت <strong>نسخة احتياطية</strong> يحدث على الهاتف؛ وأنت تختار مكان حفظ كل ملف.</p>
+<h2 id="">خطوة بخطوة</h2>
+<h3 id="">إنشاء ملف نسخة احتياطية</h3>
+<ol class="steps"><li>افتح الإعدادات، ثم <strong>النسخ الاحتياطي وبياناتك</strong>.</li><li>انقر <strong>تصدير نسخة احتياطية مشفّرة</strong>.</li><li>اكتب عبارة سرية لا تقل عن 8 أحرف وانقر <strong>تصدير</strong>.</li><li>انقر زر المشاركة الذي يظهر. احفظ الملف في «الملفات» أو iCloud Drive، أو أرسله إلى جهاز Mac لديك.</li></ol>
+<aside class="callout careful"><p><strong>تنبيه:</strong> العبارة السرية هي المفتاح الوحيد للملف. لا أحد، بما في ذلك مطور Damla، يمكنه فتح النسخة الاحتياطية بدونها، ولا تستطيع Damla استرجاعها. احتفظ بنسخة من العبارة في مكان آمن، منفصل عن الملف.</p></aside>
+<aside class="callout note"><p><strong>ملاحظة:</strong> الاستعادة تستبدل كل شيء على هذا الهاتف بالنسخة الاحتياطية. لا يمكنك دمج نسخة احتياطية مع ما هو موجود سلفًا.</p></aside>
+<h3 id="">استعادة نسخة احتياطية</h3>
+<ol class="steps"><li>افتح الإعدادات، ثم <strong>النسخ الاحتياطي وبياناتك</strong>.</li><li>انقر <strong>الاستعادة من نسخة احتياطية</strong> واختر ملف <code>damlabackup</code>.</li><li>اكتب عبارة تلك النسخة الاحتياطية السرية.</li><li>تحذرك Damla من أن هذا يستبدل جميع البيانات على هذا الهاتف. انقر <strong>استبدال كل شيء</strong> للمتابعة.</li></ol>
+<p>النسخة الاحتياطية اليدوية والتلقائية هما من النوع نفسه من الملفات، و<strong>الاستعادة من نسخة احتياطية</strong> يفتح كليهما. وتعمل الاستعادة من أي ملف نسخة احتياطية مشفّر.</p>
+<h3 id="damla">دع Damla تنسخ احتياطيًا من تلقاء نفسها</h3>
+<p>يكتب النسخ الاحتياطي التلقائي الملف المشفّر من النوع نفسه إلى مجلد تختاره، مرة واحدة على الأكثر كل يوم.</p>
+<ol class="steps"><li>افتح الإعدادات، ثم <strong>النسخ الاحتياطي وبياناتك</strong>، ثم <strong>النسخ الاحتياطي التلقائي</strong>.</li><li>انقر <strong>اختر مجلدًا وابدأ</strong> واختر مجلدًا من منتقي «الملفات».</li><li>اكتب عبارة سرية لا تقل عن 8 أحرف وانقر <strong>ابدأ</strong>. تكتب Damla الملف الأول في الحال.</li></ol>
+<p>من تلك اللحظة فصاعدًا، تُحفظ نسخة مشفّرة في ذلك المجلد مرة كل يوم، عندما تترك التطبيق.</p>
+<aside class="callout note"><p><strong>ملاحظة:</strong> يحفظ النسخ الاحتياطي التلقائي عبارته السرية في Keychain على هذا الهاتف، فلا تضطر إلى كتابتها مرة أخرى. ولا يزال تحتاجها للاستعادة، لذا احتفظ بنسخة منها في مكان خارج الهاتف أيضًا.</p></aside>
+<p>إيقافه بـ <strong>إيقاف النسخ الاحتياطي التلقائي</strong> لا يحذف الملفات المكتوبة سلفًا.</p>
+<h2 id="">من الجيد أن تعرف</h2>
+<aside class="callout limit"><p><strong>حد:</strong> لا يعمل النسخ الاحتياطي التلقائي إلا عندما تترك التطبيق. إذا لم تفتح Damla لعدة أيام، فلا شيء يُنسخ احتياطيًا خلال تلك المدة.</p></aside>
+<ul><li>النسخة الاحتياطية التي تصدّرها يدويًا تحصل على اسم يبدأ بـ <code>Damla-</code>، ثم تاريخ اليوم، وينتهي بـ <code>.damlabackup</code>.</li><li>يبدأ اسم ملف النسخة الاحتياطية التلقائية بـ <code>Damla-auto-</code>، ثم التاريخ، وينتهي بـ <code>.damlabackup</code>. ملف اليوم يحل محل الملف السابق لليوم نفسه.</li><li>المجلد في iCloud Drive يحفظ النسخة الاحتياطية التلقائية خارج هذا الهاتف أيضًا.</li><li>على شاشة <strong>النسخ الاحتياطي التلقائي</strong> يمكنك أن ترى المجلد ومتى جرت آخر نسخة احتياطية، وأن تنقر <strong>نسخ احتياطي الآن</strong> لتشغيل واحدة فورًا.</li><li>تُحفظ أحدث 7 نسخ احتياطية تلقائية؛ وتُزال الأقدم تلقائيًا.</li><li>إذا كانت آخر نسخة احتياطية تلقائية قد قيل عنها ثلاثة أيام على الأقل، تعرض Damla تذكيرًا على «اليوم». وإذا لم تكن قد أعددت نسخة احتياطية تلقائية قط وكنت تسجل منذ فترة، تعرض «اليوم» بدلًا من ذلك صف «انسخ بياناتك احتياطيًا».</li><li>إذا انتهت فترة تجريبية أو اشتراك، تصبح Damla للقراءة فقط، لكن تصدير نسخة احتياطية واستعادتها لا يزالان يعملان.</li><li>إذا فُقدت عبارة نسخة احتياطية موجودة سرية، فلا يمكن فتح الملف. تحقق من أنك ما زلت تتذكرها قبل أن تعتمد على الملف.</li></ul>
+<h2 id="">مقالات ذات صلة</h2>
+<ul><li><a href="../../../../ar/guide/data/settings-map/">الإعدادات، صفحة بصفحة</a></li><li><a href="../../../../ar/guide/data/export-and-family-snapshot/">التصدير ولقطة العائلة</a></li><li><a href="../../../../ar/guide/data/privacy-and-your-data/">الخصوصية وبياناتك</a></li><li><a href="../../../../ar/guide/help/troubleshooting/">استكشاف الأخطاء وإصلاحها</a></li></ul><p class="small">هل هناك شيء غير واضح أو ناقص؟ اكتب إلى <span class="email">support@raveniq.ai</span> واذكر الصفحة.</p><div class="pager" role="navigation" aria-label="السابق والتالي"><a rel="prev" href="../../../../ar/guide/data/settings-map/">&rarr; الإعدادات، صفحة بصفحة</a><a rel="next" href="../../../../ar/guide/data/export-and-family-snapshot/">التصدير ولقطة العائلة &larr;</a></div></article></div><script src="../../../../guide/search.js" defer></script>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>تقدّم Damla معلومات وليست نصيحة مالية.</p>
+    <p>RavenIQ.</p>
+    <p><a href="../../../../ar/guide/">الدليل</a> &middot; <a href="../../../../ar/support/">الدعم</a> &middot; <a href="../../../../ar/privacy/">الخصوصية</a> &middot; <a href="../../../../ar/terms/">الشروط</a></p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<article class="prose">
+<h1>Assistance</h1>
+
+<section>
+  <h2>Comment faire... ?</h2>
+  <p>Des guides pas à pas pour chaque partie de {{short_name}}, avec des exemples concrets, se trouvent dans le <a href="{{root}}guide/">guide</a>.</p>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Écrivez à <span class="email">{{support_email}}</span> (<a href="mailto:{{support_email}}?subject=Damla%20support">ouvrir dans votre application de messagerie</a>). {{app_name}} est réalisé par {{publisher}}.</p>
+  <p>{{short_name}} n'a pas de comptes, il n'y a donc rien à consulter par nom d'utilisateur. Merci de ne pas envoyer de numéros de compte, de relevés ou de captures d'écran de vos finances, sauf si vous le souhaitez.</p>
+</section>
+
+<section>
+  <h2>Questions</h2>
+  <ul class="toc">
+    <li><a href="#where">Où sont mes données ?</a></li>
+    <li><a href="#lock">Face ID et code</a></li>
+    <li><a href="#backup">Sauvegarde et restauration</a></li>
+    <li><a href="#data">Exporter ou supprimer mes données</a></li>
+    <li><a href="#online">Que consulte-t-il en ligne ?</a></li>
+    <li><a href="#ai">Faut-il Apple Intelligence ?</a></li>
+    <li><a href="#import">Importer un relevé bancaire</a></li>
+    <li><a href="#capture">Messages bancaires, e-mails et paiements Wallet</a></li>
+    <li><a href="#problem">Comment signaler un problème</a></li>
+    <li><a href="#advice">Est-ce un conseil financier ?</a></li>
+  </ul>
+
+  <details id="where">
+    <summary>Où sont mes données ?</summary>
+    <p>Sur votre téléphone, dans le stockage privé de l'app, avec la protection des données d'iOS activée. {{short_name}} n'a aucun serveur en propre, nous ne recevons donc jamais vos comptes, soldes ou transactions.</p>
+  </details>
+
+  <details id="lock">
+    <summary>Face ID et code</summary>
+    <p>{{short_name}} demande Face ID ou votre code à l'ouverture, puis à nouveau après une absence d'une durée que vous choisissez dans les réglages. Les données de votre visage ne quittent jamais iOS ; l'app apprend seulement que la vérification a réussi.</p>
+  </details>
+
+  <details id="backup">
+    <summary>Sauvegarde et restauration</summary>
+    <p>{{short_name}} peut enregistrer un <strong>fichier de sauvegarde chiffré</strong> dans un dossier de votre choix dans l'app Fichiers, qui peut se trouver sur votre téléphone, dans iCloud Drive ou sur un autre appareil. La phrase secrète est conservée dans le trousseau de votre téléphone. La sauvegarde est automatique, au maximum une fois par jour, et les sept dernières sont conservées. Les réglages indiquent quand la dernière sauvegarde a eu lieu, et l'écran Aujourd'hui vous prévient si elle est en retard.</p>
+    <p><strong>Restauration.</strong> Dans les réglages, ouvrez la section sauvegarde, choisissez le fichier et saisissez la phrase secrète. Si vous perdez la phrase secrète, le fichier ne peut pas être ouvert ; gardez-la donc en note dans un endroit sûr.</p>
+  </details>
+
+  <details id="data">
+    <summary>Exporter ou supprimer mes données</summary>
+    <p>Vous pouvez exporter vos transactions sous forme de feuille de calcul (CSV) depuis les réglages. Pour tout supprimer, supprimez l'app : ses données sont retirées de votre téléphone. Les fichiers de sauvegarde que vous avez enregistrés sont des copies distinctes ; supprimez-les donc dans l'app Fichiers si vous ne les voulez plus. Comme nous ne détenons aucune de vos données, il n'y a rien de notre côté à supprimer.</p>
+  </details>
+
+  <details id="online">
+    <summary>Que consulte-t-il en ligne ?</summary>
+    <p>Presque rien, et uniquement ce qui suit. {{short_name}} fonctionne entièrement hors ligne.</p>
+    <ul>
+      <li><strong>Les taux de change</strong>, au maximum une fois par jour. Seuls les codes des devises sont envoyés.</li>
+      <li><strong>Les cours</strong> des avoirs que vous choisissez de suivre. C'est <strong>désactivé par défaut</strong>. Seuls les codes boursiers sont envoyés, au maximum une fois par jour.</li>
+      <li><strong>Un logo de banque</strong>, uniquement lorsque vous touchez « Trouver le logo en ligne ». Le nom de la banque recherché est envoyé à Wikimedia Commons.</li>
+    </ul>
+    <p>Comme pour toute requête web, ces services peuvent voir votre adresse IP. Rien sur vos propres comptes ou montants n'est envoyé.</p>
+  </details>
+
+  <details id="ai">
+    <summary>Faut-il Apple Intelligence ?</summary>
+    <p>Non. La saisie d'une phrase, par exemple un paiement sur un plan de versements, utilise le modèle de langage intégré à votre iPhone lorsque votre appareil et vos réglages le permettent, et tout se déroule entièrement sur le téléphone. Sans lui, {{short_name}} revient à un lecteur plus simple et à des formulaires : tout continue de fonctionner.</p>
+  </details>
+
+  <details id="import">
+    <summary>Importer un relevé bancaire</summary>
+    <p>Choisissez un relevé PDF ou CSV depuis Fichiers. {{short_name}} le lit sur votre téléphone, ne le téléverse jamais, et vous montre ce qu'il a trouvé à vérifier avant que quoi que ce soit ne soit ajouté. Il vérifie que les montants correspondent au solde du relevé et signale tout écart.</p>
+  </details>
+
+  <details id="capture">
+    <summary>Messages bancaires, e-mails et paiements Wallet</summary>
+    <p>iOS ne donne aux apps aucun accès à vos messages ou à votre messagerie : {{short_name}} ne les lit donc jamais. Ils ne l'atteignent que si vous configurez un raccourci (une automatisation qui se déclenche à l'arrivée d'un message ou d'un paiement Wallet) ou que vous en partagez un vous-même vers {{short_name}}. Tout est lu sur votre téléphone et rien n'est téléversé.</p>
+    <p><strong>À quoi s'attendre.</strong> {{short_name}} ajoute une alerte bancaire claire comme transaction, et garde toute alerte floue en attente d'un simple appui de votre part. Il ignore les publicités, les avis de limite et de taux, les rappels et les codes à usage unique, et un avis de facture est retenu comme facture, non compté comme dépense. Cela fonctionne en lisant la formulation du message, ce n'est donc pas parfait :</p>
+    <ul>
+      <li>Un message de votre banque qui est en réalité une offre peut parfois être lu comme un paiement, et une formulation inhabituelle peut rester dans la boîte de réception au lieu d'être ajoutée. Regardez <em>Réglages &rsaquo; Alertes récentes</em> pour voir ce que {{short_name}} a fait de chacune, et balayez une alerte pour l'<strong>annuler</strong>.</li>
+      <li>Votre raccourci envoie chaque message que vous pointez vers lui. Limitez-le à l'expéditeur ou à l'objet de votre banque, pour que des messages et e-mails sans rapport ne soient pas du tout envoyés à {{short_name}}. Les textes qui ne ressemblent pas à de l'argent sont écartés sans être conservés.</li>
+      <li>Rien ne crée d'engagement, comme une nouvelle facture ou un prêt, sans votre confirmation.</li>
+    </ul>
+  </details>
+
+  <details id="problem">
+    <summary>Comment signaler un problème</summary>
+    <p>Écrivez à <span class="email">{{support_email}}</span> en indiquant :</p>
+    <ul>
+      <li>ce que vous avez fait, ce que vous attendiez et ce qui s'est passé à la place</li>
+      <li>la version de {{short_name}} et votre version d'iOS</li>
+      <li>le modèle de votre iPhone</li>
+      <li>une capture d'écran, uniquement si elle ne montre rien de privé</li>
+    </ul>
+  </details>
+
+  <details id="advice">
+    <summary>Est-ce un conseil financier ?</summary>
+    <p>Non. {{short_name}} donne des informations et des estimations à partir des chiffres que vous saisissez. Ce n'est pas un conseil financier, fiscal, juridique ou en investissement, et il ne connaît pas votre situation complète. Pour les décisions importantes, parlez à un professionnel qualifié.</p>
+  </details>
+</section>
+
+<p>Voir aussi la <a href="{{root}}privacy/">politique de confidentialité</a> et les <a href="{{root}}terms/">conditions d'utilisation</a>.</p>
+</article>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sauvegarde et restauration - guide de Damla</title>
+<meta name="description" content="Des sauvegardes chiffrées vers un dossier de votre choix, et comment restaurer.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F4F6FA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1220" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://damla.raveniq.ai/fr/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="en" href="https://damla.raveniq.ai/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="tr" href="https://damla.raveniq.ai/tr/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="fr" href="https://damla.raveniq.ai/fr/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="ar" href="https://damla.raveniq.ai/ar/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="x-default" href="https://damla.raveniq.ai/guide/data/backup-and-restore/">
+<link rel="icon" href="../../../../favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="../../../../favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../../../apple-touch-icon.png">
+<link rel="stylesheet" href="../../../../style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="../../../../fr/"><img src="../../../../favicon-32.png" width="28" height="28" alt="">Damla</a>
+    <nav aria-label="Main">
+<a href="../../../../fr/guide/" aria-current="page">Guide</a>
+<a href="../../../../fr/support/">Assistance</a>
+<a href="../../../../fr/privacy/">Confidentialité</a>
+<a href="../../../../fr/terms/">Conditions</a>
+    </nav>
+    <nav class="lang-switch" aria-label="Langue"><a href="../../../../guide/data/backup-and-restore/" lang="en" hreflang="en">English</a> &middot; <a href="../../../../tr/guide/data/backup-and-restore/" lang="tr" hreflang="tr">Türkçe</a> &middot; <span aria-current="true">Français</span> &middot; <a href="../../../../ar/guide/data/backup-and-restore/" lang="ar" hreflang="ar">العربية</a></nav>
+  </div>
+</header>
+<main id="main" class="wrap wide">
+<div class="guide-layout"><details class="guide-menu" open><summary>Parcourir le guide</summary>
+<div class="guide-nav" role="navigation" aria-label="Guide">
+<a class="guide-home" href="../../../../fr/guide/">Tous les sujets</a>
+<details><summary>Commencez ici</summary><ul>
+<li><a href="../../../../fr/guide/start/what-damla-is-for/">À quoi sert Damla</a></li>
+<li><a href="../../../../fr/guide/start/first-setup/">Configurer vos livres</a></li>
+<li><a href="../../../../fr/guide/start/a-day-with-damla/">Une journée avec Damla</a></li>
+<li><a href="../../../../fr/guide/start/plan-and-free-trial/">L&#x27;essai gratuit et l&#x27;abonnement</a></li>
+</ul></details>
+<details><summary>Enregistrer l’argent</summary><ul>
+<li><a href="../../../../fr/guide/recording/type-a-sentence/">Saisir une phrase</a></li>
+<li><a href="../../../../fr/guide/recording/fill-a-form/">Remplir un formulaire</a></li>
+<li><a href="../../../../fr/guide/recording/paste-or-share/">Coller ou partager un message</a></li>
+<li><a href="../../../../fr/guide/recording/the-inbox/">La boîte de réception</a></li>
+<li><a href="../../../../fr/guide/recording/the-activity-list/">La liste Activité</a></li>
+</ul></details>
+<details><summary>Comptes, cartes et personnes</summary><ul>
+<li><a href="../../../../fr/guide/accounts/accounts-page/">La page Comptes</a></li>
+<li><a href="../../../../fr/guide/accounts/credit-cards/">Cartes de crédit</a></li>
+<li><a href="../../../../fr/guide/accounts/loans/">Prêts</a></li>
+<li><a href="../../../../fr/guide/accounts/people-lent-and-borrowed/">Personnes : prêté et emprunté</a></li>
+<li><a href="../../../../fr/guide/accounts/logos-and-account-details/">Logos et détails du compte</a></li>
+<li><a href="../../../../fr/guide/accounts/starting-balances/">Soldes de départ et ajustements</a></li>
+</ul></details>
+<details><summary>Placements</summary><ul>
+<li><a href="../../../../fr/guide/holdings/investments/">Placements et investissements</a></li>
+<li><a href="../../../../fr/guide/holdings/property-and-cars/">Biens immobiliers et voitures</a></li>
+<li><a href="../../../../fr/guide/holdings/staged-purchases/">Achats échelonnés</a></li>
+<li><a href="../../../../fr/guide/holdings/prices-and-exchange-rates/">Prix et taux de change</a></li>
+</ul></details>
+<details><summary>Planification</summary><ul>
+<li><a href="../../../../fr/guide/planning/forecast-and-safe-to-spend/">Prévision et dépense sûre</a></li>
+<li><a href="../../../../fr/guide/planning/what-if/">Et si</a></li>
+<li><a href="../../../../fr/guide/planning/ask-damla/">Demander à Damla</a></li>
+<li><a href="../../../../fr/guide/planning/income-and-bills/">Revenus et factures qui se répètent</a></li>
+<li><a href="../../../../fr/guide/planning/bills-coming/">Factures à venir</a></li>
+<li><a href="../../../../fr/guide/planning/payees-and-categories/">Bénéficiaires et catégories</a></li>
+<li><a href="../../../../fr/guide/planning/set-aside/">Mettre de côté</a></li>
+<li><a href="../../../../fr/guide/planning/instalment-plans/">Plans d’échelonnement</a></li>
+</ul></details>
+<details><summary>Aperçu</summary><ul>
+<li><a href="../../../../fr/guide/insights/where-the-money-went/">Où est passé l’argent</a></li>
+<li><a href="../../../../fr/guide/insights/budget/">Budget</a></li>
+<li><a href="../../../../fr/guide/insights/trends-and-net-worth/">Tendances et patrimoine net</a></li>
+<li><a href="../../../../fr/guide/insights/what-i-noticed/">Ce que j’ai remarqué</a></li>
+</ul></details>
+<details><summary>Capture automatique</summary><ul>
+<li><a href="../../../../fr/guide/capture/how-automatic-capture-works/">Comment fonctionne la capture automatique</a></li>
+<li><a href="../../../../fr/guide/capture/setup-wizard/">L&#x27;assistant de configuration des automatisations</a></li>
+<li><a href="../../../../fr/guide/capture/bank-texts-and-emails/">Textos et e-mails de la banque</a></li>
+<li><a href="../../../../fr/guide/capture/apple-pay-and-wallet/">Paiements Apple Pay et Wallet</a></li>
+<li><a href="../../../../fr/guide/capture/importing-statements/">Importer un relevé</a></li>
+<li><a href="../../../../fr/guide/capture/screenshots-of-your-bank-app/">Captures d&#x27;écran de votre appli bancaire</a></li>
+<li><a href="../../../../fr/guide/capture/what-damla-ignores/">Ce que Damla ignore, et comment annuler une alerte</a></li>
+</ul></details>
+<details open><summary>Réglages, sauvegarde et confidentialité</summary><ul>
+<li><a href="../../../../fr/guide/data/settings-map/">Réglages, page par page</a></li>
+<li><a href="../../../../fr/guide/data/backup-and-restore/" aria-current="page">Sauvegarde et restauration</a></li>
+<li><a href="../../../../fr/guide/data/export-and-family-snapshot/">Exportation et aperçu famille</a></li>
+<li><a href="../../../../fr/guide/data/privacy-and-your-data/">Confidentialité et vos données</a></li>
+</ul></details>
+<details><summary>Aide</summary><ul>
+<li><a href="../../../../fr/guide/help/troubleshooting/">Dépannage</a></li>
+</ul></details>
+</div></details><article class="prose guide-page"><p class="crumb"><a href="../../../../fr/guide/">Guide</a> &rsaquo; Réglages, sauvegarde et confidentialité</p><h1>Sauvegarde et restauration</h1><p class="lead-in">Des sauvegardes chiffrées vers un dossier de votre choix, et comment restaurer.</p><div class="on-page" role="navigation" aria-label="Sur cette page"><strong>Sur cette page</strong><ul><li><a href="#quand-l-utiliser">Quand l'utiliser</a></li><li><a href="#pas-pas">Pas à pas</a></li><li><a href="#bon-savoir">Bon à savoir</a></li><li><a href="#voir-aussi">Voir aussi</a></li></ul></div><p>Une sauvegarde est un seul fichier chiffré avec tout ce que Damla contient : vos comptes, transactions, plans et réglages. Vous en faites une pour garder vos livres en sécurité, et pour les restaurer si vous supprimez l'app.</p>
+<h2 id="quand-l-utiliser">Quand l'utiliser</h2>
+<ul><li>Avant de supprimer l'app. Supprimer l'app efface ses données.</li><li>Avant tout grand changement dans vos enregistrements, ou avant d'installer une version de test ou préliminaire de l'app.</li><li>Quand vous voulez une copie que Damla fait chaque jour, sans qu'on le lui demande.</li><li>Quand vous voulez une copie complète de vos livres, conservée hors de l'app et entre vos mains.</li></ul>
+<p>Les sauvegardes vivent dans Réglages. Ouvrez Aujourd'hui, appuyez sur l'engrenage en haut à droite, puis sur <strong>Sauvegarde et vos données</strong>. Tout ce qui se trouve sous <strong>Sauvegarde</strong> se passe sur le téléphone ; vous choisissez où chaque fichier est enregistré.</p>
+<h2 id="pas-pas">Pas à pas</h2>
+<h3 id="faire-un-fichier-de-sauvegarde">Faire un fichier de sauvegarde</h3>
+<ol class="steps"><li>Ouvrez Réglages, puis <strong>Sauvegarde et vos données</strong>.</li><li>Appuyez sur <strong>Exporter une sauvegarde chiffrée</strong>.</li><li>Tapez une phrase secrète d'au moins 8 caractères et appuyez sur <strong>Exporter</strong>.</li><li>Appuyez sur le bouton de partage qui apparaît. Enregistrez le fichier dans Files ou iCloud Drive, ou envoyez-le à votre Mac.</li></ol>
+<aside class="callout careful"><p><strong>Attention:</strong> La phrase secrète est la seule clé du fichier. Personne, y compris le développeur de Damla, ne peut ouvrir la sauvegarde sans elle, et Damla ne peut pas la récupérer. Gardez une copie de la phrase en lieu sûr, séparée du fichier.</p></aside>
+<aside class="callout note"><p><strong>Remarque:</strong> Restaurer remplace tout sur ce téléphone par la sauvegarde. Vous ne pouvez pas fusionner une sauvegarde avec ce qui existe déjà.</p></aside>
+<h3 id="restaurer-une-sauvegarde">Restaurer une sauvegarde</h3>
+<ol class="steps"><li>Ouvrez Réglages, puis <strong>Sauvegarde et vos données</strong>.</li><li>Appuyez sur <strong>Restaurer depuis une sauvegarde</strong> et choisissez le fichier <code>damlabackup</code>.</li><li>Tapez la phrase secrète de cette sauvegarde.</li><li>Damla vous avertit que cela remplace toutes les données de ce téléphone. Appuyez sur <strong>Tout remplacer</strong> pour continuer.</li></ol>
+<p>Une sauvegarde manuelle et une sauvegarde automatique sont le même genre de fichier, et <strong>Restaurer depuis une sauvegarde</strong> ouvre les deux. La restauration fonctionne depuis n'importe quel fichier de sauvegarde chiffré.</p>
+<h3 id="laisser-damla-sauvegarder-toute-seule">Laisser Damla sauvegarder toute seule</h3>
+<p>Les sauvegardes automatiques écrivent le même genre de fichier chiffré dans un dossier que vous choisissez, au plus une fois par jour.</p>
+<ol class="steps"><li>Ouvrez Réglages, puis <strong>Sauvegarde et vos données</strong>, puis <strong>Sauvegarde automatique</strong>.</li><li>Appuyez sur <strong>Choisir un dossier et démarrer</strong> et choisissez un dossier dans le sélecteur Files.</li><li>Tapez une phrase secrète d'au moins 8 caractères et appuyez sur <strong>Démarrer</strong>. Damla écrit le premier fichier tout de suite.</li></ol>
+<p>Dès lors, une copie chiffrée est enregistrée dans ce dossier une fois par jour, quand vous quittez l'app.</p>
+<aside class="callout note"><p><strong>Remarque:</strong> La sauvegarde automatique garde sa phrase secrète dans le Keychain de ce téléphone, pour que vous n'ayez pas à la retaper. Vous en avez toujours besoin pour restaurer, gardez donc aussi une copie quelque part hors du téléphone.</p></aside>
+<p>L'arrêter avec <strong>Arrêter les sauvegardes automatiques</strong> ne supprime pas les fichiers déjà écrits.</p>
+<h2 id="bon-savoir">Bon à savoir</h2>
+<aside class="callout limit"><p><strong>Limite:</strong> Une sauvegarde automatique ne s'exécute que lorsque vous quittez l'app. Si vous n'ouvrez pas Damla pendant plusieurs jours, rien n'est sauvegardé pendant ce temps.</p></aside>
+<ul><li>Une sauvegarde que vous exportez à la main reçoit un nom qui commence par <code>Damla-</code>, puis la date du jour, et se termine par <code>.damlabackup</code>.</li><li>Le nom de fichier d'une sauvegarde automatique commence par <code>Damla-auto-</code>, puis la date, et se termine par <code>.damlabackup</code>. Le fichier du jour remplace le précédent pour le même jour.</li><li>Un dossier dans iCloud Drive garde aussi la sauvegarde automatique hors de ce téléphone.</li><li>Sur l'écran <strong>Sauvegarde automatique</strong>, vous pouvez voir le dossier et quand la dernière sauvegarde a tourné, et appuyer sur <strong>Sauvegarder maintenant</strong> pour en lancer une tout de suite.</li><li>Les 7 sauvegardes automatiques les plus récentes sont conservées ; les plus anciennes sont supprimées automatiquement.</li><li>Si la dernière sauvegarde automatique a au moins trois jours, Damla montre un rappel sur Aujourd'hui. Si vous n'avez jamais configuré de sauvegarde automatique et que vous enregistrez depuis un moment, Aujourd'hui montre plutôt une ligne « Sauvegardez vos données ».</li><li>Si un essai ou un abonnement a pris fin, Damla devient en lecture seule, mais exporter et restaurer une sauvegarde fonctionnent toujours.</li><li>Si la phrase secrète d'une sauvegarde existante est perdue, le fichier ne peut pas être ouvert. Vérifiez que vous vous en souvenez encore avant de compter sur le fichier.</li></ul>
+<h2 id="voir-aussi">Voir aussi</h2>
+<ul><li><a href="../../../../fr/guide/data/settings-map/">Réglages, page par page</a></li><li><a href="../../../../fr/guide/data/export-and-family-snapshot/">Exportation et aperçu famille</a></li><li><a href="../../../../fr/guide/data/privacy-and-your-data/">Confidentialité et vos données</a></li><li><a href="../../../../fr/guide/help/troubleshooting/">Dépannage</a></li></ul><p class="small">Quelque chose n’est pas clair ou manque ? Écrivez à <span class="email">support@raveniq.ai</span> en indiquant la page.</p><div class="pager" role="navigation" aria-label="Précédent et suivant"><a rel="prev" href="../../../../fr/guide/data/settings-map/">&larr; Réglages, page par page</a><a rel="next" href="../../../../fr/guide/data/export-and-family-snapshot/">Exportation et aperçu famille &rarr;</a></div></article></div><script src="../../../../guide/search.js" defer></script>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Damla fournit des informations, pas des conseils financiers.</p>
+    <p>RavenIQ.</p>
+    <p><a href="../../../../fr/guide/">Guide</a> &middot; <a href="../../../../fr/support/">Assistance</a> &middot; <a href="../../../../fr/privacy/">Confidentialité</a> &middot; <a href="../../../../fr/terms/">Conditions</a></p>
+  </div>
+</footer>
+</body>
+</html>

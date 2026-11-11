@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yedekleme ve geri yükleme - Damla kılavuzu</title>
+<meta name="description" content="Seçtiğiniz bir klasöre şifreli yedekler ve nasıl geri yükleneceği.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F4F6FA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1220" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://damla.raveniq.ai/tr/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="en" href="https://damla.raveniq.ai/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="tr" href="https://damla.raveniq.ai/tr/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="fr" href="https://damla.raveniq.ai/fr/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="ar" href="https://damla.raveniq.ai/ar/guide/data/backup-and-restore/">
+<link rel="alternate" hreflang="x-default" href="https://damla.raveniq.ai/guide/data/backup-and-restore/">
+<link rel="icon" href="../../../../favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="../../../../favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../../../../apple-touch-icon.png">
+<link rel="stylesheet" href="../../../../style.css">
+</head>
+<body>
+<a class="skip" href="#main">İçeriğe geç</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="../../../../tr/"><img src="../../../../favicon-32.png" width="28" height="28" alt="">Damla</a>
+    <nav aria-label="Main">
+<a href="../../../../tr/guide/" aria-current="page">Kılavuz</a>
+<a href="../../../../tr/support/">Destek</a>
+<a href="../../../../tr/privacy/">Gizlilik</a>
+<a href="../../../../tr/terms/">Koşullar</a>
+    </nav>
+    <nav class="lang-switch" aria-label="Dil"><a href="../../../../guide/data/backup-and-restore/" lang="en" hreflang="en">English</a> &middot; <span aria-current="true">Türkçe</span> &middot; <a href="../../../../fr/guide/data/backup-and-restore/" lang="fr" hreflang="fr">Français</a> &middot; <a href="../../../../ar/guide/data/backup-and-restore/" lang="ar" hreflang="ar">العربية</a></nav>
+  </div>
+</header>
+<main id="main" class="wrap wide">
+<div class="guide-layout"><details class="guide-menu" open><summary>Kılavuzda gezin</summary>
+<div class="guide-nav" role="navigation" aria-label="Kılavuz">
+<a class="guide-home" href="../../../../tr/guide/">Tüm konular</a>
+<details><summary>Buradan başlayın</summary><ul>
+<li><a href="../../../../tr/guide/start/what-damla-is-for/">Damla ne işe yarar</a></li>
+<li><a href="../../../../tr/guide/start/first-setup/">Defterlerinizi kurmak</a></li>
+<li><a href="../../../../tr/guide/start/a-day-with-damla/">Damla ile bir gün</a></li>
+<li><a href="../../../../tr/guide/start/plan-and-free-trial/">Ücretsiz deneme ve abonelik</a></li>
+</ul></details>
+<details><summary>Parayı kaydetme</summary><ul>
+<li><a href="../../../../tr/guide/recording/type-a-sentence/">Bir cümle yazın</a></li>
+<li><a href="../../../../tr/guide/recording/fill-a-form/">Form doldurun</a></li>
+<li><a href="../../../../tr/guide/recording/paste-or-share/">Bir mesajı yapıştırın veya paylaşın</a></li>
+<li><a href="../../../../tr/guide/recording/the-inbox/">Gelen kutusu</a></li>
+<li><a href="../../../../tr/guide/recording/the-activity-list/">Hareket listesi</a></li>
+</ul></details>
+<details><summary>Hesaplar, kartlar ve kişiler</summary><ul>
+<li><a href="../../../../tr/guide/accounts/accounts-page/">Hesaplar sayfası</a></li>
+<li><a href="../../../../tr/guide/accounts/credit-cards/">Kredi kartları</a></li>
+<li><a href="../../../../tr/guide/accounts/loans/">Krediler</a></li>
+<li><a href="../../../../tr/guide/accounts/people-lent-and-borrowed/">Kişiler: verilen ve alınan borçlar</a></li>
+<li><a href="../../../../tr/guide/accounts/logos-and-account-details/">Logolar ve hesap ayrıntıları</a></li>
+<li><a href="../../../../tr/guide/accounts/starting-balances/">Başlangıç bakiyeleri ve düzeltmeler</a></li>
+</ul></details>
+<details><summary>Varlıklar</summary><ul>
+<li><a href="../../../../tr/guide/holdings/investments/">Yatırımlar ve varlıklar</a></li>
+<li><a href="../../../../tr/guide/holdings/property-and-cars/">Taşınmaz ve araçlar</a></li>
+<li><a href="../../../../tr/guide/holdings/staged-purchases/">Aşamalı alımlar</a></li>
+<li><a href="../../../../tr/guide/holdings/prices-and-exchange-rates/">Fiyatlar ve döviz kurları</a></li>
+</ul></details>
+<details><summary>Planlama</summary><ul>
+<li><a href="../../../../tr/guide/planning/forecast-and-safe-to-spend/">Tahmin ve güvenli harcama</a></li>
+<li><a href="../../../../tr/guide/planning/what-if/">Ya olursa</a></li>
+<li><a href="../../../../tr/guide/planning/ask-damla/">Damla’ya sor</a></li>
+<li><a href="../../../../tr/guide/planning/income-and-bills/">Tekrarlayan gelir ve faturalar</a></li>
+<li><a href="../../../../tr/guide/planning/bills-coming/">Yaklaşan faturalar</a></li>
+<li><a href="../../../../tr/guide/planning/payees-and-categories/">Alıcılar ve kategoriler</a></li>
+<li><a href="../../../../tr/guide/planning/set-aside/">Kenara ayır</a></li>
+<li><a href="../../../../tr/guide/planning/instalment-plans/">Taksit planları</a></li>
+</ul></details>
+<details><summary>Özet</summary><ul>
+<li><a href="../../../../tr/guide/insights/where-the-money-went/">Paranın gittiği yer</a></li>
+<li><a href="../../../../tr/guide/insights/budget/">Bütçe</a></li>
+<li><a href="../../../../tr/guide/insights/trends-and-net-worth/">Eğilimler ve net varlık</a></li>
+<li><a href="../../../../tr/guide/insights/what-i-noticed/">Fark ettiklerim</a></li>
+</ul></details>
+<details><summary>Otomatik kayıt</summary><ul>
+<li><a href="../../../../tr/guide/capture/how-automatic-capture-works/">Otomatik kayıt nasıl çalışır</a></li>
+<li><a href="../../../../tr/guide/capture/setup-wizard/">Otomasyon kurulum sihirbazı</a></li>
+<li><a href="../../../../tr/guide/capture/bank-texts-and-emails/">Banka kısa mesajları ve e-postalar</a></li>
+<li><a href="../../../../tr/guide/capture/apple-pay-and-wallet/">Apple Pay ve Wallet ödemeleri</a></li>
+<li><a href="../../../../tr/guide/capture/importing-statements/">Ekstre içe aktarma</a></li>
+<li><a href="../../../../tr/guide/capture/screenshots-of-your-bank-app/">Banka uygulamanızın ekran görüntüleri</a></li>
+<li><a href="../../../../tr/guide/capture/what-damla-ignores/">Damla&#x27;nın yok saydıkları ve bir bildirimi geri alma</a></li>
+</ul></details>
+<details open><summary>Ayarlar, yedekleme ve gizlilik</summary><ul>
+<li><a href="../../../../tr/guide/data/settings-map/">Ayarlar, sayfa sayfa</a></li>
+<li><a href="../../../../tr/guide/data/backup-and-restore/" aria-current="page">Yedekleme ve geri yükleme</a></li>
+<li><a href="../../../../tr/guide/data/export-and-family-snapshot/">Dışa aktarma ve aile görüntüsü</a></li>
+<li><a href="../../../../tr/guide/data/privacy-and-your-data/">Gizlilik ve verileriniz</a></li>
+</ul></details>
+<details><summary>Yardım</summary><ul>
+<li><a href="../../../../tr/guide/help/troubleshooting/">Sorun giderme</a></li>
+</ul></details>
+</div></details><article class="prose guide-page"><p class="crumb"><a href="../../../../tr/guide/">Kılavuz</a> &rsaquo; Ayarlar, yedekleme ve gizlilik</p><h1>Yedekleme ve geri yükleme</h1><p class="lead-in">Seçtiğiniz bir klasöre şifreli yedekler ve nasıl geri yükleneceği.</p><div class="on-page" role="navigation" aria-label="Bu sayfada"><strong>Bu sayfada</strong><ul><li><a href="#ne-zaman-kullan-l-r">Ne zaman kullanılır</a></li><li><a href="#ad-m-ad-m">Adım adım</a></li><li><a href="#faydal-bilgiler">Faydalı bilgiler</a></li><li><a href="#i-lgili">İlgili</a></li></ul></div><p>Yedek, Damla'nın tuttuğu her şeyi içeren tek bir şifreli dosyadır: hesaplarınız, işlemleriniz, planlarınız ve ayarlarınız. Defterlerinizi güvende tutmak ve uygulamayı silerseniz geri yükleyebilmek için bir yedek alırsınız.</p>
+<h2 id="ne-zaman-kullan-l-r">Ne zaman kullanılır</h2>
+<ul><li>Uygulamayı silmeden önce. Uygulamayı silmek verisini de siler.</li><li>Kayıtlarınızda büyük bir değişiklik yapmadan önce ya da uygulamanın bir test veya ön sürümünü kurmadan önce.</li><li>Damla'nın her gün, sorulmadan yaptığı bir kopya istediğinizde.</li><li>Defterlerinizin eksiksiz bir kopyasını, uygulamanın dışında ve elinizde tutmak istediğinizde.</li></ul>
+<p>Yedekler Ayarlar'da bulunur. Bugün ekranını açın, sağ üstteki dişliye dokunun, sonra <strong>Yedek ve verileriniz</strong>'e dokunun. <strong>Yedek</strong> altındaki her şey telefonda olur; her dosyanın nereye kaydedileceğini siz seçersiniz.</p>
+<h2 id="ad-m-ad-m">Adım adım</h2>
+<h3 id="bir-yedek-dosyas-olu-turun">Bir yedek dosyası oluşturun</h3>
+<ol class="steps"><li>Ayarlar'ı açın, sonra <strong>Yedek ve verileriniz</strong>.</li><li><strong>Şifreli yedek dışa aktar</strong>'a dokunun.</li><li>En az 8 karakterli bir parola yazın ve <strong>Dışa aktar</strong>'a dokunun.</li><li>Beliren paylaş düğmesine dokunun. Dosyayı Files ya da iCloud Drive'a kaydedin veya Mac'inize gönderin.</li></ol>
+<aside class="callout careful"><p><strong>Dikkat:</strong> Parola, dosyanın tek anahtarıdır. Damla'nın geliştiricisi dahil kimse onsuz yedeği açamaz ve Damla onu kurtaramaz. İfadeyi güvenli, dosyadan ayrı bir yerde saklayın.</p></aside>
+<aside class="callout note"><p><strong>Not:</strong> Geri yükleme, bu telefondaki her şeyin yerine yedeği koyar. Bir yedeği zaten var olanla birleştiremezsiniz.</p></aside>
+<h3 id="bir-yede-i-geri-y-kleyin">Bir yedeği geri yükleyin</h3>
+<ol class="steps"><li>Ayarlar'ı açın, sonra <strong>Yedek ve verileriniz</strong>.</li><li><strong>Yedekten geri yükle</strong>'ye dokunun ve <code>damlabackup</code> dosyasını seçin.</li><li>O yedeğin parolasını yazın.</li><li>Damla sizi, bunun bu telefondaki tüm verinin yerine koyacağı konusunda uyarır. Devam etmek için <strong>Her şeyin yerine koy</strong>'a dokunun.</li></ol>
+<p>Manuel bir yedekle otomatik olan aynı türden dosyadır ve <strong>Yedekten geri yükle</strong> ikisini de açar. Geri yükleme herhangi bir şifreli yedek dosyasından çalışır.</p>
+<h3 id="damla-y-kendi-kendine-yedeklemeye-b-rak-n">Damla'yı kendi kendine yedeklemeye bırakın</h3>
+<p>Otomatik yedeklemeler, seçtiğiniz bir klasöre aynı türden şifreli dosyayı günde en fazla bir kez yazar.</p>
+<ol class="steps"><li>Ayarlar'ı açın, sonra <strong>Yedek ve verileriniz</strong>, sonra <strong>Otomatik yedekleme</strong>.</li><li><strong>Bir klasör seçin ve başlayın</strong>'a dokunun ve Files seçicisinden bir klasör seçin.</li><li>En az 8 karakterli bir parola yazın ve <strong>Başla</strong>'ya dokunun. Damla ilk dosyayı hemen yazar.</li></ol>
+<p>O andan sonra, günde bir kez, uygulamadan ayrıldığınızda o klasöre şifreli bir kopya kaydedilir.</p>
+<aside class="callout note"><p><strong>Not:</strong> Otomatik yedekleme parolasını bu telefonun Keychain'inde tutar, böylece onu yeniden yazmak zorunda kalmazsınız. Ama geri yükleme için yine de ona ihtiyacınız olacak; bu yüzden bir kopyasını telefonun dışında da bir yerde saklayın.</p></aside>
+<p><strong>Otomatik yedeklemeyi durdur</strong> ile kapatmak, o ana kadar yazılmış dosyaları silmez.</p>
+<h2 id="faydal-bilgiler">Faydalı bilgiler</h2>
+<aside class="callout limit"><p><strong>Sınır:</strong> Otomatik yedekleme yalnızca uygulamadan ayrıldığınızda çalışır. Birkaç gün Damla'yı açmazsanız, bu sürede hiçbir şey yedeklenmez.</p></aside>
+<ul><li>Elle dışa aktardığınız bir yedek, <code>Damla-</code> ile başlayan, ardından bugünün tarihi gelen ve <code>.damlabackup</code> ile biten bir ad alır.</li><li>Otomatik bir yedeğin dosya adı <code>Damla-auto-</code> ile başlar, ardından tarih gelir ve <code>.damlabackup</code> ile biter. Bugünün dosyası aynı günün öncekini değiştirir.</li><li>iCloud Drive'daki bir klasör, otomatik yedeği bu telefonun dışında da tutar.</li><li><strong>Otomatik yedekleme</strong> ekranında klasörü ve son yedeğin ne zaman çalıştığını görebilir, hemen bir yedek almak için <strong>Şimdi yedekle</strong>'ye dokunabilirsiniz.</li><li>En yeni 7 otomatik yedek tutulur; daha eskileri kendiliğinden kaldırılır.</li><li>Son otomatik yedek en az üç gün eskiyse, Damla Bugün ekranında bir hatırlatıcı gösterir. Hiç otomatik yedekleme kurmadıysanız ve bir süredir kayıt tutuyorsanız, Bugün bunun yerine "Verilerinizi yedekleyin" satırını gösterir.</li><li>Bir deneme ya da abonelik bitmişse, Damla salt okunur olur; ama yedek dışa aktarma ve geri yükleme çalışmaya devam eder.</li><li>Var olan bir yedeğin parolası kaybedilirse dosya açılamaz. Dosyaya güvenmeden önce onu hâlâ hatırladığınızdan emin olun.</li></ul>
+<h2 id="i-lgili">İlgili</h2>
+<ul><li><a href="../../../../tr/guide/data/settings-map/">Ayarlar, sayfa sayfa</a></li><li><a href="../../../../tr/guide/data/export-and-family-snapshot/">Dışa aktarma ve aile görüntüsü</a></li><li><a href="../../../../tr/guide/data/privacy-and-your-data/">Gizlilik ve verileriniz</a></li><li><a href="../../../../tr/guide/help/troubleshooting/">Sorun giderme</a></li></ul><p class="small">Anlaşılmayan ya da eksik bir şey mi var? <span class="email">support@raveniq.ai</span> adresine yazın ve hangi sayfa olduğunu belirtin.</p><div class="pager" role="navigation" aria-label="Önceki ve sonraki"><a rel="prev" href="../../../../tr/guide/data/settings-map/">&larr; Ayarlar, sayfa sayfa</a><a rel="next" href="../../../../tr/guide/data/export-and-family-snapshot/">Dışa aktarma ve aile görüntüsü &rarr;</a></div></article></div><script src="../../../../guide/search.js" defer></script>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Damla finansal tavsiye değil, bilgi verir.</p>
+    <p>RavenIQ.</p>
+    <p><a href="../../../../tr/guide/">Kılavuz</a> &middot; <a href="../../../../tr/support/">Destek</a> &middot; <a href="../../../../tr/privacy/">Gizlilik</a> &middot; <a href="../../../../tr/terms/">Koşullar</a></p>
+  </div>
+</footer>
+</body>
+</html>
